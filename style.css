@@ -2,32 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: Arial,serif;
 }
 img{
     max-width: 100%;                /* Para todas las imágenes */
     height: auto;
 }
 body{
-    height: 200vh;
+    height: 250vh;
 }
 header{
+    z-index: 100;
     position: fixed;
     width: 100%;
     height: 17vh;
-    border: 1px solid rgb(245, 239, 239,.1);               /* borde caja header */
+    border: 1px solid rgb(245, 239, 239,.1);               /* Caja Header */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 10vw;
-    padding-right: 10vw;
+    padding-right: 12.5vw;
     border-radius: 0% 0% 25% 25%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: rgb(255, 255, 255,.01);
     backdrop-filter: blur(0.1px);
 }
-header #logo{                                           /* borde caja logo*/
+header #logo{                                             /* Caja Logo*/
     background-color: rgb(85, 222, 247);
     width: 100px;
     box-shadow: rgba(46, 195, 240, 0.4) -5px 5px, rgba(100, 210, 253, 0.3) -10px 10px, rgba(96, 212, 241, 0.2) -15px 15px, rgba(94, 216, 247, 0.1) -20px 20px, rgba(75, 225, 245, 0.05) -25px 25px;
@@ -41,27 +42,63 @@ header #navBar{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 400px;                                         /* borde caja nav */
+    width: 400px;                                         /* Caja Nav */
     padding-left: 1vw; 
-    padding-right: 1vw;           
+    padding-right: 1vw;    
+           
 }
 header #navBar a{
     text-decoration: none;
-    color: rgb(43, 42, 42);
+    color: rgb(43, 42, 42);                           /* Enlaces del Nav */
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
     box-shadow: rgba(255, 255, 255, 0.781) 0px 4px 12px;
-    background-image: linear-gradient(to right top, #d3dae5, #bcd8ef, #9ad7f5, #6bd8f4, #12d8eb);
-    font-family: Arial,serif;
+    background-image: linear-gradient(to right top, rgb(211, 218, 229.5), rgb(188, 216, 239.5), rgb(154, 215, 245,.5), rgb(107, 216, 244,.5), rgb(18, 216, 235,.5));
     border-radius: 5px;
+    
 }
 #Welcome-page{
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(90, 87, 87);
-    width: 100%;
+    width: 100%;                                        /* Caja Pagina Bienvenida */
     height: 130vh;
     border-radius: 0% 0% 50% 40%;
     background: rgb(255, 255, 255);
-    
 }
+#Welcome-page .Foto-y-Datos{
+    position: relative;
+    top: 26vh;
+    margin-right: 220px;
+    padding: 45px 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;                          /* Caja Foto y Datos */
+    align-items: center;
+    width: auto;
+    height: auto;
+    align-self: flex-end;
+    border: 1px solid rgb(190, 187, 187);
+    border-radius: 5px;
+}
+#Welcome-page .Foto-y-Datos h1{
+    margin-top: 3vh;
+    font-size: 1.7em;
+    color: rgb(43, 42, 42);   
+}
+#Welcome-page .Foto-y-Datos p{
+    margin-top: 1vh;
+    font-size: 1.5em;
+    color: rgb(43, 42, 42); 
+}
+#Welcome-page .Foto-y-Datos #Foto-de-Cesar{
+    width: 200px;                                       /* Caja con Foto de Cesar */
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#Welcome-page .Foto-y-Datos #Foto-de-Cesar img{
+    border-radius: 50%;
+}
+
