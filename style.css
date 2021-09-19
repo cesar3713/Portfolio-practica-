@@ -210,32 +210,40 @@ header #navBar a{
 }
 #Mobile_edge div div #Mobile__top{
     width: 100%;
-    border-radius: 35px 35px 0px 0px;
+    border-radius: 35px 35px 0px 0px;                              /* Mobile Top */
     height: 5%;
     background-image: linear-gradient(to right top, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
     border: 0.1px solid rgb(243, 242, 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
 }
 #Mobile_edge div div #Mobile__head{
-    width: 100%;
+    width: 100%;                                                    /* Mobile Head */
     border-radius: 0%;
     height: 10%;
     background-image: linear-gradient(to right bottom, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
     border: 0.1px solid rgb(243, 242, 242);
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding-left: 3%;
 }
 #Mobile_edge div div #Mobile__body{
-    width: 100%;
+    width: 100%;                                                    /* Mobile Body */
     border-radius: 0%;
     height: 75%;
     background-image: linear-gradient(to top, #f0f9f9, #f0f9fa, #f1f8fa, #f2f8fa, #f3f7fa, #f2f6f9, #f2f6f9, #f1f5f8, #eff4f7, #ecf4f5, #ebf3f3, #e9f2f1);
     border: 0.1px solid rgb(243, 242, 242);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #Mobile_edge div div #Mobile__bottom{
-    width: 100%;
+    width: 100%;                                                    /* Mobile Bottom */
     border-radius: 0px 0px 30px 30px;
     height: 10%;
     background-image: radial-gradient(circle, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
@@ -247,8 +255,22 @@ header #navBar a{
 
 
 
-#Mobile_edge div div #Mobile__head img{
-    height: 70%;
+
+#Mobile_edge div div #Mobile__top img{
+    height: 60% ;                                                  /* Mobile Top * */ 
+}
+
+
+
+
+
+
+
+
+
+
+#Mobile_edge div div #Mobile__head img {
+    height: 80%;                                                  /* Mobile Head * */
     border: 0.1px solid rgb(126, 124, 124);
     border-radius: 50%;
 }
@@ -259,10 +281,22 @@ header #navBar a{
     width: 15%;
     height: 70%;
     border-radius: 0%;
-    
+    position: relative;
+    right: 30%;
 }
 #Mobile_edge div div #Mobile__head p{
     color: rgb(235, 230, 230);
     font-size: 1em;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+#Mobile_edge div div #Mobile__body div{
+    border: 1px solid black;
 }
