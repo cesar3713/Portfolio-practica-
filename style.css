@@ -58,7 +58,6 @@ header #navBar a{
     box-shadow: rgba(255, 255, 255, 0.781) 0px 4px 12px;
     background-image: linear-gradient(to right top, rgb(211, 218, 229.5), rgb(188, 216, 239.5), rgb(154, 215, 245,.5), rgb(107, 216, 244,.5), rgb(18, 216, 235,.5));
     border-radius: 5px;
-    
 }
 #Welcome-page{
     display: flex;
@@ -324,3 +323,4 @@ textarea{
     width: 90%;
     padding: 5% 5%;
 }
+
