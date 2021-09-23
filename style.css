@@ -5,143 +5,294 @@
     font-family: Arial,serif;
 }
 img{
-    max-width: 100%;                /* Para todas las imágenes */
+    max-width: 100%;                             /* Para todas las imágenes */
     height: auto;
 }
 body{
-    height: 450vh;
     background-color: #ececec;
+    width: 100%;
 }
 header{
     z-index: 100;
     position: fixed;
     width: 100%;
     height: 13vh;
-    border: 1px solid rgb(245, 239, 239,.1);               /* Caja Header */
+    border: 1px solid rgb(255, 255, 255,.1);             /* Caja Header */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     align-items: center;
-    padding-left: 10vw;
-    padding-right: 12.5vw;
+   
     border-radius: 0% 0% 25% 25%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(129, 129, 129, 0.2) 0px 5px 10px;
     background-color: rgb(255, 255, 255,.01);
     backdrop-filter: blur(0.1px);
 }
-header #logo{                                             /* Caja Logo*/
+header #logo{   
+    position: relative;
+    left: 10vw;                                          /* Caja Logo Img*/
     background-color: rgb(85, 222, 247);
     width: 100px;
     box-shadow: rgba(46, 195, 240, 0.4) -5px 5px, rgba(100, 210, 253, 0.3) -10px 10px, rgba(96, 212, 241, 0.2) -15px 15px, rgba(94, 216, 247, 0.1) -20px 20px, rgba(75, 225, 245, 0.05) -25px 25px;
     border-radius: 50% 20% 80% 20%;
+    animation-name: fire-blue;
 }
-header #logo img{
-    border-radius: 50% 20% 80% 20%;
+@keyframes fire-blue{
+
 }
-header #navBar{
+
+
+
+
+
+
+
+
+
+header #btn-nav{
+    display: none;
+}
+header label{
+    display: none;
+    width: 60px;
+}
+header label:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255,.01);
+    backdrop-filter: blur(0.1px);
+    border: 1px solid rgb(255, 255, 255,.1);  
+}
+header .nav{
+    position: absolute;
+    right: 5vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.5%;
+    height: 70px;                                         /* Caja Nav */
+    padding-left: 1vw; 
+    padding-right: 1vw;      
+}
+header .nav ul{
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 400px;                                         /* Caja Nav */
-    padding-left: 1vw; 
-    padding-right: 1vw;    
-           
+    height: 60px;
+    width: 88.5%;
 }
-header #navBar a{
+header .nav ul li{
+    list-style: none;
+}
+header .nav a{
     text-decoration: none;
-    color: rgb(43, 42, 42);                           /* Enlaces del Nav */
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    box-shadow: rgba(255, 255, 255, 0.781) 0px 4px 12px;
-    background-image: linear-gradient(to right top, rgb(211, 218, 229.5), rgb(188, 216, 239.5), rgb(154, 215, 245,.5), rgb(107, 216, 244,.5), rgb(18, 216, 235,.5));
+    color: rgb(43, 42, 42);  
+    padding: 1vh 1.5vw;                         /* Enlaces del Nav */
+    background-image: linear-gradient(to right top, rgb(211, 218, 229,1), rgb(188, 216, 239,1), rgb(154, 215, 245,1), rgb(107, 216, 244,1), rgb(18, 216, 235,1));
     border-radius: 5px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
 }
+@media (max-width:800px){
+    header label{
+        display: inline-block;
+    }
+    header .nav{
+        position: absolute;
+        left: -80%;
+        transition: 0.2s;
+    }
+    header .nav ul{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #btn-nav:checked ~ .nav{
+        left: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Welcome-page{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(90, 87, 87);
+    
+    align-items: center;
+    border: none;
     width: 100%;                                        /* Caja Pagina Bienvenida */
-    height: 130vh;
-    border-radius: 0% 0% 50% 40%;
-    background: rgb(255, 255, 255);
+    height: 100vh;
+    /*border-radius: 0% 0% 50% 40%;*/
+    
 }
 #Welcome-page #Photo_and_data{
     position: relative;
-    top: 26vh;
-    margin-right: 220px;
-    padding: 45px 20px;
+    top: 18vh;
+
+    width: 330px;
+    min-width: 200px;
+    height: 430px;
+    
+    padding: 30px 20px;
     z-index: 1;
     display: flex;
-    flex-direction: column;                          /* Caja Foto y Datos */
+    flex-direction: column;   
+    justify-content: space-around;                       /* Caja Foto y Datos */
     align-items: center;
-    width: auto;
-    height: auto;
-    align-self: flex-end;
-    border: 1px solid rgb(190, 187, 187);
-    border-radius: 5px;
+    
+    align-self: center;
+    border: 1px solid rgb(255, 255, 255,.7);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255,.7);
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #Welcome-page #Photo_and_data h1{
-    margin-top: 3vh;
+    margin-top: 2vh;
     font-size: 1.7em;
-    color: rgb(43, 42, 42);   
+    color: #131313;  
+    text-align: center;
+   
 }
 #Welcome-page #Photo_and_data p{
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 1.5em;
-    color: rgb(43, 42, 42); 
+    color: rgb(34, 34, 34); 
+    text-align: justify;
 }
-#Welcome-page #Photo_and_data #Cesar_photo_box{
-    width: 200px;                                       /* Caja con Foto de Cesar */
+#Welcome-page #Photo_and_data img{
+    width: 170px;                                           /* Foto de Cesar */
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 1px solid rgb(255, 255, 255,.01);
+    box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+    
 }
-#Welcome-page #Photo_and_data #Cesar_photo_box img{
-    border-radius: 50%;
+.box_wave1{
+    z-index: 30;
+    width: 100%;                                           /* Box Olas 1 */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 57.3vh;
 }
+.wave1{
+    z-index: 30;
+    background-position: bottom;
+    width: 6000px;
+    height: 60vh;
+    background-image: url(Ola.svg);
+    transform: rotate(180deg);
+    opacity: .8;
+    border: none;
+    z-index: 4;
+    animation: wave-1 7s linear infinite;
+}
+@keyframes wave-1{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+
 #All_projects_section{
     position: relative;
     top: 10vh;
     display: flex;
-    flex-direction: column;                           /* Caja Proyectos */
-    justify-content: space-around;
+    flex-direction: row;                                 /* Caja Proyectos */
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    height: auto;
+    border: none;
+    height: 100vh;
     width: 100%;
+    background-color: #2196F3;
+    opacity: .8;
+    border: none;
 }
 #All_projects_section #projects{
     height: 80vh;
     width: 80%;
     border: 1px solid black;
 }
+.box_wave2{
+    
+    width: 100%;                                           /* Box Olas 2*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 183.5vh;
+}
+.wave2{
+    width: 6000px;
+    height: 60vh;
+    background-image: url(Ola.svg);
+    
+    opacity: .8;
+    border: none;
+    z-index: 4;
+    animation: wave-2 7s linear infinite;
+}
+@keyframes wave-2{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
 #Contact_section{
     position: relative;
     top: 20vh;
-    display: flex;                                  /* Caja Contacto */
+    display: flex;                                           /* Caja Contacto */
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
+    max-height: 200vh;
     width: 100%;
-    border: 1px solid black;
+    border: none;
+    flex-wrap: wrap;
+    
 }
 #Contact_section #box_contact_links{
-    border: rgb(211, 210, 210) 1px solid;
+    
     display: flex;
     flex-direction: column;
     align-items: center;                                   /* Caja Grande Izquierda */
-    padding: 30px;
-    height: 80vh;
+    padding: 45px 10px 10px 10px;
+    
+    position: relative;
+    top: 5%;
+    width: 400px;
+    height: 70%;
+    border: 1px solid rgb(255, 255, 255,.7);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255,.7);
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #Contact_section #box_contact_links h3{
     font-size: 2em;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 #Contact_section #box_contact_links p{
     font-size: 1.2em;
     margin-top: 10%;
+    color: rgb(22, 22, 22);
 }
 
 #Contact_section #box_contact_links #links{
@@ -149,13 +300,14 @@ header #navBar a{
     flex-direction: row;                                     /* Caja Enlaces Iconos */
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(194, 192, 192);
+    
     padding: 10px;
     margin-top: 10vh;
 }
 
 #Contact_section #box_contact_links #links .icons{
     position: relative;
+    bottom: 0px;
     width: 150px;
 }
 #Contact_section #box_contact_links #links .icons a{
@@ -165,21 +317,81 @@ header #navBar a{
     align-items: center;
 }
 #Contact_section #box_contact_links #links .icons a p{
+    position: absolute;
+    top: 200px;
     margin-top: 2vh;
     color: rgb(43, 42, 42); 
-    text-decoration: underline white;
+    text-decoration: none;
 }
 #Icono-Linkedin img{
-    width: 120px;
+    position: relative;
+    width: 100px;
     border-radius: 50%;
+    animation: rebota 1s alternate infinite ease-in;
 }
+#iconoGithub{
+    position: relative;
+    width: 100px;
+    animation: rebota 1s alternate infinite ease-in;
+    animation-delay: 1s;
+}
+.shadow{
+  width: 100px;
+  height: 1px;
+  background: #000;
+  box-shadow: 0 0 5px 5px #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 188px; 
+  opacity: .2;
+  transform: scale(0.5);
+  animation: sombra 1s alternate infinite ease-in;
+}
+#shadow_git{
+    animation: sombra_git 1s alternate infinite ease-in;
+}
+@keyframes sombra{ 
+  
+  100%{
+    transform: scale(1);
+    opacity: .5
+  }
+}
+
+@keyframes sombra_git{ 
+  
+  0%{
+    transform: scale(1);
+    opacity: .5
+  }
+}
+
+@keyframes rebota{
+  90%{
+    height: 100px;
+  }
+  
+  100%{
+    transform: translateY(100px);
+    height: 80px;
+  }
+}
+
+
+
+
+
+
+
+
 #Contact_section #Mobile{
     position: relative;
+    top: 5%;
     border: 2px solid rgb(41, 243, 243);                           /* Caja grande Celular */
     width: 400px;
-    height: 600px;
-    border-radius: 40px;
-    box-shadow: rgba(7, 0, 0, 0.3) 0px 2px 8px 0px;
+    height: 80%;
+    border-radius: 37px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #Contact_section #Mobile #Mobile_edge{
     width: 100%;
@@ -204,12 +416,12 @@ header #navBar a{
     width: 95%;
     height: 97%;                                                   /* Ultima capa Borde Celular */
     border: 2px solid rgb(58, 57, 57);
-    border-radius: 31px 31px 31px 31px;
+    border-radius: 28px 28px 31px 31px;
     /*background-image: linear-gradient(to right top, #26eded, #01e2f7, #24d6fc, #48c9fc, #66bbf6, #5ca8dc, #5295c3, #4982aa, #2b647c, #1c4751, #132a2c, #020d0c);*/
 }
 #Mobile_edge div div #Mobile__top{
     width: 100%;
-    border-radius: 35px 35px 0px 0px;                              /* Mobile Top */
+    border-radius: 48px 48px 0px 0px;                              /* Mobile Top */
     height: 5%;
     background-image: linear-gradient(to right top, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
     border: 0.1px solid rgb(243, 242, 242);
@@ -217,8 +429,8 @@ header #navBar a{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10%;
-    /*margin-top: 0.08%;*/
+    padding-right: 15%;
+    
 }
 #Mobile_edge div div #Mobile__head{
     width: 100%;                                                    /* Mobile Head */
@@ -282,7 +494,7 @@ header #navBar a{
     height: 70%;
     border-radius: 0%;
     position: relative;
-    right: 30%;
+    right: 29%;
 }
 #Mobile_edge div div #Mobile__head p{
     color: rgb(235, 230, 230);

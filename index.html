@@ -7,42 +7,52 @@
     <title>Cesar</title>
     <link rel="shortcut icon" href="icono-redondeo.ico">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+
 
     <section id="Welcome-page">                                       <!-- Sección Bienvenida -->
     
         <header>
 
-            <div id="logo">
-                <a href=""><img src="EnviteIgneo.jpg" alt=""></a>      <!--  Logo  -->
-            </div>
+            <a href=""><img src="EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
+            
+            <input type="checkbox" name="" id="btn-nav">
 
-            <nav id="navBar">
+            <label for="btn-nav"><img src="menu2 (2).png" alt=""></label>
 
-                <a href="#">Work</a>                                     <!--  Nav  -->
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+            <nav class="nav">
+
+                <ul>
+                    <li><a href="#">Work</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>                                          
 
             </nav>
 
         </header>
 
         <article id="Photo_and_data">
-
-            <div id="Cesar_photo_box">                                  <!--  Foto y trabajo  -->
-                <img src="Cesar.png" alt="Cesar"> 
-            </div>
+                                                                      <!--  Foto y trabajo  -->
+            <img src="Cesar.png" alt="Cesar"> 
 
             <h1>Julio Cesar Beas Suarez</h1>
 
             <p>Web developer</p>
 
-            <p>QA Tester</p> 
+            <p style="margin-top: 1vh;">QA Tester</p> 
 
         </article>
 
     </section>
+    
+    <div class="box_wave1">
+
+        <div class="wave1"></div>
+
+    </div>
 
     <section id="All_projects_section">
                                                                     <!--  Sección Proyectos  -->
@@ -51,6 +61,12 @@
         </article>
     
     </section>
+
+    <div class="box_wave2">
+    
+        <div class="wave2"></div>
+    
+    </div>
 
     <section id="Contact_section">
                                                                     <!--  Sección Contacto  -->            
@@ -62,7 +78,8 @@
             <div id="links">
                 <div class="icons">
                     <a href="">
-                        <img src="Github.jpg" alt="">
+                        <img src="git.png" alt="" id="iconoGithub">
+                        <div class="shadow" id="shadow_git"></div>
                         <p>Github</p>
                     </a>
                     
@@ -71,6 +88,7 @@
                 <div class="icons" id="Icono-Linkedin">
                     <a href="">
                         <img src="Linkedin.jpg" alt="">
+                        <div class="shadow"></div>
                         <p>Linkedin</p>
                     </a>
 
@@ -104,17 +122,19 @@
                                 <p>Cesar</p>
                             </div>
 
-                            <div style="background-color: rgb(85, 222, 247);
-                                        width: 10%;
-                                        box-shadow: rgba(46, 195, 240, 0.4) -2.5px 2.5px, rgba(100, 210, 253, 0.3) -5px 5px, rgba(96, 212, 241, 0.2) -7.5px 7.5px, rgba(94, 216, 247, 0.1) -10px 10px, rgba(75, 225, 245, 0.05) -12.5px 12.5px;
-                                        border-radius: 50% 20% 80% 20%;
-                                        justify-self: flex-end;
-                                        position: relative;
-                                        right: 3%;">
+                            
 
-                                        <img style="border-radius: 50% 20% 80% 20%;" src="EnviteIgneo.jpg" alt="">
+                            <img src="EnviteIgneo.jpg" alt="" style="background-color: rgb(85, 222, 247);
+                                            width: 13%;
+                                            height: auto;
+                                            position: relative;
+                                            right: 3%;
+                                            justify-self: flex-end;
+                                            box-shadow: rgba(46, 195, 240, 0.4) -2.5px 2.5px, rgba(100, 210, 253, 0.3) -5px 5px, rgba(96, 212, 241, 0.2) -7.5px 7.5px, rgba(94, 216, 247, 0.1) -10px 10px, rgba(75, 225, 245, 0.05) -12.5px 12.5px;
+                                            border-radius: 50% 20% 80% 20%;
+                                            border: none;">
 
-                            </div>
+                            
 
                         </div>   
 
@@ -122,19 +142,26 @@
                                                      
                             <p style="border: 1px solid black;
                                       margin-top: 3%;
-                                      width: 15%;
-                                      padding: 1% 0px;
-                                      text-align: center;">Today
+                                      width: 17%;
+                                      padding: 5px;
+                                      align-self: center;
+                                      text-align: center;
+                                      border-radius: 7px;
+                                      background-color: rgb(255, 255, 255);">Today
                             </p>
 
                             <p style="border: 1px solid black;
                                       margin-top: 3%;
                                       width: 55%;
-                                      padding: 2% 0px;
+                                      height: 10%;
+                                      padding: 5px 5px;
+                                      padding-top: 3%;
                                       text-align: start;
-                                      padding-left: 2%;
+                                      padding-left: 3%;
                                       align-self: flex-end;
-                                      margin-right: 2%;">Let's work together</p>
+                                      margin-right: 2%;
+                                      border-radius: 7px;
+                                      background-color: rgb(255, 255, 255);">Let's work together</p>
 
                             <form action="">
 
@@ -184,6 +211,7 @@
         </div>
 
     </section>
+
     
 </body>
 </html>
