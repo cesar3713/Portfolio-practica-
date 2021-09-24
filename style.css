@@ -4,6 +4,45 @@
     box-sizing: border-box;
     font-family: Arial,serif;
 }
+:root{
+    --height-header: 100px;
+    --width-logo: 100px;
+
+    --padding-nav-a: 7.57px;
+
+    --height-welcome-page: 757px;
+
+    --height-photo-data: 430px;
+    --width-photo-data: 330px;
+    --top-photo-data: 130px;
+    --padding-photo-data: 30px 20px;
+    --fontsize-h1: 1.7em;
+    --fontsize-job: 1.5em;
+    --photo-cesar: 170px;
+
+    --top-wave1: 433.89999999999997px;
+    --width-wave: 6000px;
+    --height-wave: 454.2px;
+    --move-wave: -1600px;
+
+    --top-proyects: 75.7px;
+    --height-proyects: 757px;
+    --height-proyects-proyect: 605.6px;
+
+    --top-wave2: 1388.5px;
+
+    --top-contact: 151.4px;
+    --height-contact: 757px;
+    --gap-contact: 50px 50px;
+
+    --width-contact-boxizq: 400px;
+    --margin-left-boxizq: 20px;
+    --width-icono-redes: 100px;
+    --iconos-redes-position: 0px;
+
+    --width-mobile: 400px;
+    --height-mobile: 80%;
+}
 img{
     max-width: 100%;                             /* Para todas las imágenes */
     height: auto;
@@ -16,7 +55,7 @@ header{
     z-index: 100;
     position: fixed;
     width: 100%;
-    height: 13vh;
+    height: var(--height-header);
     border: 1px solid rgb(255, 255, 255,.1);             /* Caja Header */
     display: flex;
     flex-direction: row;
@@ -32,13 +71,10 @@ header #logo{
     position: relative;
     left: 10vw;                                          /* Caja Logo Img*/
     background-color: rgb(85, 222, 247);
-    width: 100px;
+    width: var(--width-logo);
     box-shadow: rgba(46, 195, 240, 0.4) -5px 5px, rgba(100, 210, 253, 0.3) -10px 10px, rgba(96, 212, 241, 0.2) -15px 15px, rgba(94, 216, 247, 0.1) -20px 20px, rgba(75, 225, 245, 0.05) -25px 25px;
     border-radius: 50% 20% 80% 20%;
     animation-name: fire-blue;
-}
-@keyframes fire-blue{
-
 }
 
 
@@ -89,7 +125,7 @@ header .nav ul li{
 header .nav a{
     text-decoration: none;
     color: rgb(43, 42, 42);  
-    padding: 1vh 1.5vw;                         /* Enlaces del Nav */
+    padding: var(--padding-nav-a) 1.5vw;                         /* Enlaces del Nav */
     background-image: linear-gradient(to right top, rgb(211, 218, 229,1), rgb(188, 216, 239,1), rgb(154, 215, 245,1), rgb(107, 216, 244,1), rgb(18, 216, 235,1));
     border-radius: 5px;
     box-shadow: rgb(255, 255, 255) 0px 3px 8px;
@@ -133,19 +169,18 @@ header .nav a{
     align-items: center;
     border: none;
     width: 100%;                                        /* Caja Pagina Bienvenida */
-    height: 100vh;
-    /*border-radius: 0% 0% 50% 40%;*/
+    height: var(--height-welcome-page);
     
 }
 #Welcome-page #Photo_and_data{
     position: relative;
-    top: 18vh;
-
-    width: 330px;
-    min-width: 200px;
-    height: 430px;
     
-    padding: 30px 20px;
+    top: var(--top-photo-data);
+    width: var(--width-photo-data);
+    
+    height: var(--height-photo-data);
+    
+    padding: var(--padding-photo-data);
     z-index: 1;
     display: flex;
     flex-direction: column;   
@@ -160,20 +195,21 @@ header .nav a{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #Welcome-page #Photo_and_data h1{
-    margin-top: 2vh;
-    font-size: 1.7em;
+    
+    margin-top: 10px;
+    font-size: var(--fontsize-h1);
     color: #131313;  
     text-align: center;
    
 }
 #Welcome-page #Photo_and_data p{
-    margin-top: 2vh;
-    font-size: 1.5em;
+    margin-top: 10px;
+    font-size: var(--fontsize-job);
     color: rgb(34, 34, 34); 
     text-align: justify;
 }
 #Welcome-page #Photo_and_data img{
-    width: 170px;                                           /* Foto de Cesar */
+    width: var(--photo-cesar);                                           /* Foto de Cesar */
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255,.01);
     box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
@@ -185,13 +221,14 @@ header .nav a{
     overflow-x: hidden;
     overflow-y: hidden;
     position: absolute;
-    top: 57.3vh;
+    
+    top: var(--top-wave1);
 }
 .wave1{
     z-index: 30;
     background-position: bottom;
-    width: 6000px;
-    height: 60vh;
+    width: var(--width-wave);
+    height: var(--height-wave);
     background-image: url(Ola.svg);
     transform: rotate(180deg);
     opacity: .8;
@@ -204,26 +241,26 @@ header .nav a{
         margin-left: 0px;
     }
     100%{
-        margin-left: -1600px;
+        margin-left: var(--move-wave);
     }
 }
 
 #All_projects_section{
     position: relative;
-    top: 10vh;
+    top: var(--top-proyects);
     display: flex;
     flex-direction: row;                                 /* Caja Proyectos */
     justify-content: center;
     align-items: center;
     border: none;
-    height: 100vh;
+    height: var(--height-proyects);
     width: 100%;
     background-color: #2196F3;
     opacity: .8;
     border: none;
 }
 #All_projects_section #projects{
-    height: 80vh;
+    height: var(--height-proyects-proyect);
     width: 80%;
     border: 1px solid black;
 }
@@ -233,11 +270,11 @@ header .nav a{
     overflow-x: hidden;
     overflow-y: hidden;
     position: absolute;
-    top: 183.5vh;
+    top: var(--top-wave2);
 }
 .wave2{
-    width: 6000px;
-    height: 60vh;
+    width: var(--width-wave);
+    height: var(--height-wave);
     background-image: url(Ola.svg);
     
     opacity: .8;
@@ -250,22 +287,22 @@ header .nav a{
         margin-left: 0px;
     }
     100%{
-        margin-left: -1600px;
+        margin-left: var(--move-wave);
     }
 }
 #Contact_section{
     position: relative;
-    top: 20vh;
+    top: var(--top-contact);
     display: flex;                                           /* Caja Contacto */
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    max-height: 200vh;
+    height: var(--height-contact);
+   
     width: 100%;
     border: none;
     flex-wrap: wrap;
-    
+    gap: var(--gap-contact);
 }
 #Contact_section #box_contact_links{
     
@@ -276,13 +313,14 @@ header .nav a{
     
     position: relative;
     top: 5%;
-    width: 400px;
+    width: var(--width-contact-boxizq);
     height: 70%;
     border: 1px solid rgb(255, 255, 255,.7);
     border-radius: 30px;
     background-color: rgb(255, 255, 255,.7);
     backdrop-filter: blur(2px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: var(--margin-left-boxizq);
 }
 #Contact_section #box_contact_links h3{
     font-size: 2em;
@@ -302,12 +340,12 @@ header .nav a{
     align-items: center;
     
     padding: 10px;
-    margin-top: 10vh;
+    margin-top: 75.7px;
 }
 
 #Contact_section #box_contact_links #links .icons{
     position: relative;
-    bottom: 0px;
+    bottom: var(--iconos-redes-position);
     width: 150px;
 }
 #Contact_section #box_contact_links #links .icons a{
@@ -319,24 +357,24 @@ header .nav a{
 #Contact_section #box_contact_links #links .icons a p{
     position: absolute;
     top: 200px;
-    margin-top: 2vh;
+    margin-top: 15.14px;
     color: rgb(43, 42, 42); 
     text-decoration: none;
 }
 #Icono-Linkedin img{
     position: relative;
-    width: 100px;
+    width: var(--width-icono-redes);
     border-radius: 50%;
     animation: rebota 1s alternate infinite ease-in;
 }
 #iconoGithub{
     position: relative;
-    width: 100px;
+    width: var(--width-icono-redes);
     animation: rebota 1s alternate infinite ease-in;
     animation-delay: 1s;
 }
 .shadow{
-  width: 100px;
+  width: var(--width-icono-redes);
   height: 1px;
   background: #000;
   box-shadow: 0 0 5px 5px #000;
@@ -388,10 +426,11 @@ header .nav a{
     position: relative;
     top: 5%;
     border: 2px solid rgb(41, 243, 243);                           /* Caja grande Celular */
-    width: 400px;
-    height: 80%;
+    width: var(--width-mobile);
+    height: var(--height-mobile);
     border-radius: 37px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: var(--margin-left-boxizq);
 }
 #Contact_section #Mobile #Mobile_edge{
     width: 100%;
@@ -536,3 +575,50 @@ textarea{
     padding: 5% 5%;
 }
 
+@media (max-width: 1452px){
+    :root{
+    --height-header: 80px;
+    --width-logo: 80px;
+
+    --padding-nav-a: 4.57px;
+
+    --height-welcome-page: 637px;
+
+    --height-photo-data: 380px;
+    --width-photo-data: 280px;
+    --top-photo-data: 110px;
+    --padding-photo-data: 30px 20px;
+    --fontsize-h1: 1.4em;
+    --fontsize-job: 1.2em;
+    --photo-cesar: 150px;
+
+    --top-wave1: 313.89999999999997px;
+    --width-wave: 6000px;
+    --height-wave: 454.2px;
+    --move-wave: -1600px;
+
+    --top-proyects: 75.7px;
+    --height-proyects: 637px;
+    --height-proyects-proyect: 515.6px;
+
+    --top-wave2: 1148.5px;
+
+    --top-contact: 131.4px;
+    --height-contact: 637px;
+    --gap-contact: 50px 50px;
+
+    --width-contact-boxizq: 350px;
+    --margin-left-boxizq: 20px;
+    --width-icono-redes: 100px;
+    --iconos-redes-position: 50px;
+
+    --width-mobile: 350px;
+    --height-mobile: 80%;
+}
+#Contact_section #box_contact_links h3{
+    font-size: 1.5em;
+}
+#Contact_section #box_contact_links p{
+    font-size: 1em;
+}
+}
