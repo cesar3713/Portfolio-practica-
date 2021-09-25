@@ -27,7 +27,7 @@
                 <ul>
                     <li><a href="#">Work</a> </li>
                     <li><a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>                                          
 
             </nav>
@@ -40,7 +40,7 @@
 
             <h1>Julio Cesar Beas Suarez</h1>
 
-            <p>Web developer</p>
+            <p>Software developer</p>
 
             <p style="margin-top: 1vh;">QA Tester</p> 
 
@@ -70,7 +70,7 @@
 
     <section id="Contact_section">
                                                                     <!--  Sección Contacto  -->            
-        <div id="box_contact_links">
+        <div id="box_contact">
 
             <h3>Let's work together...</h3>
             <p>How do you take your coffee?</p>                     <!--  Caja Links Enlaces-->
@@ -97,117 +97,26 @@
 
         </div>
 
-        <div id="Mobile">
-                                                                    <!--  Caja Mobile -->
-            <div id="Mobile_edge">                                      
+        <div id="box_contact">
 
-                <div>
-                    <div>
+            <h3>Leave your message</h3>
 
-                        <div id="Mobile__top">
-                                                                        <!--  Mobile Top -->
-                            <img src="Señal-onda.png" alt="">
+            <form action="" id="survey-form">
 
-                            <img src="Señal-barras.png" alt="">
-
-                            <img src="bateria.png" alt="">
-
-                        </div>
-
-                        <div id="Mobile__head">
-                                                                        <!--  Mobile Head  -->
-                            <img src="Cesar.png" alt="">
-
-                            <div>
-                                <p>Cesar</p>
-                            </div>
-
-                            
-
-                            <img src="EnviteIgneo.jpg" alt="" style="background-color: rgb(85, 222, 247);
-                                            width: 13%;
-                                            height: auto;
-                                            position: relative;
-                                            right: 3%;
-                                            justify-self: flex-end;
-                                            box-shadow: rgba(46, 195, 240, 0.4) -2.5px 2.5px, rgba(100, 210, 253, 0.3) -5px 5px, rgba(96, 212, 241, 0.2) -7.5px 7.5px, rgba(94, 216, 247, 0.1) -10px 10px, rgba(75, 225, 245, 0.05) -12.5px 12.5px;
-                                            border-radius: 50% 20% 80% 20%;
-                                            border: none;">
-
-                            
-
-                        </div>   
-
-                        <div id="Mobile__body">                         <!--  Mobile Body  -->
-                                                     
-                            <p style="border: 1px solid black;
-                                      margin-top: 3%;
-                                      width: 17%;
-                                      padding: 5px;
-                                      align-self: center;
-                                      text-align: center;
-                                      border-radius: 7px;
-                                      background-color: rgb(255, 255, 255);">Today
-                            </p>
-
-                            <p style="border: 1px solid black;
-                                      margin-top: 3%;
-                                      width: 55%;
-                                      height: 10%;
-                                      padding: 5px 5px;
-                                      padding-top: 3%;
-                                      text-align: start;
-                                      padding-left: 3%;
-                                      align-self: flex-end;
-                                      margin-right: 2%;
-                                      border-radius: 7px;
-                                      background-color: rgb(255, 255, 255);">Let's work together</p>
-
-                            <form action="">
-
-                                <div style="height: 40%;
-                                            padding: 1% 0px;">
-                                    <textarea name="Message" id="message" cols="10" rows="5" placeholder="Message" required></textarea>
-                                </div>                    
-
-                                <div>
-                                    <input type="email" name="Email" style="padding: 0px 5%;" placeholder="Email" id="email" required>
-                                </div>
-                                                      
-                                <div style="display: flex;
-                                            flex-direction: row;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            width: 100%;
-                                            padding-left: 3.2%;
-                                            padding-right: 2.5%;">
-
-                                            <input type="text" name="Name" id="name" placeholder="Name" style="width: 62%;
-                                            padding-left: 3.2%;
-                                            padding-right: 3%;
-                                            overflow: auto;" required>
-
-                                            <input type="image" src="Enviar.png" alt="Enviar" title="Enviar" style="width: 15%;
-                                            margin-right: 10.1%;
-                                            align-self: center;
-                                            border: 0.1px solid rgb(255, 255, 255);
-                                            border-radius: 50%;">
-                                            
-                                            
-                                </div>                                    
-                                
-                            </form>
-                        </div>
-
-                        <div id="Mobile__bottom">
-                                                                        <!--  Mobile Bottom  -->            
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+                <label for="name" id="name-label"></label>
+                <input type="text" name="Nombre y Apellido" id="name" placeholder="Name" required>
             
+                <label for="email" id="email-label"></label>
+                <input type="email" name="Email" id="email" placeholder="Email" required>
+
+                <label for="Comentario">
+                    <textarea name="Comentario" id="Comentario" cols="25" rows="6" placeholder="Message"></textarea>
+                </label>
+                
+                <button type="submit" id="submit">Send
+                    
+            </form>
+
         </div>
 
     </section>

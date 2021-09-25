@@ -2,54 +2,61 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial,serif;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root{
-    --height-header: 100px;
-    --width-logo: 100px;
+    --height-header: 90px;
+    --width-logo: 90px;
 
-    --padding-nav-a: 7.57px;
+    --padding-nav-a: 6.57px;
 
-    --height-welcome-page: 757px;
+    --height-welcome-page: 737px;
 
-    --height-photo-data: 430px;
-    --width-photo-data: 330px;
+    --height-photo-data: 410px;
+    --width-photo-data: 310px;
     --top-photo-data: 130px;
     --padding-photo-data: 30px 20px;
     --fontsize-h1: 1.7em;
-    --fontsize-job: 1.5em;
-    --photo-cesar: 170px;
+    --fontsize-job: 1.4em;
+    --photo-cesar: 175px;
 
-    --top-wave1: 433.89999999999997px;
+    --top-wave1: 403.89999999999997px;
     --width-wave: 6000px;
     --height-wave: 454.2px;
     --move-wave: -1600px;
 
-    --top-proyects: 75.7px;
-    --height-proyects: 757px;
-    --height-proyects-proyect: 605.6px;
+    --top-proyects: 65.7px;
+    --height-proyects: 737px;
+    --height-proyects-proyect: 585.6px;
 
-    --top-wave2: 1388.5px;
+    --top-wave2: 1338.5px;
 
-    --top-contact: 151.4px;
-    --height-contact: 757px;
-    --gap-contact: 50px 50px;
+    --top-contact: 61.4px;
+    --height-contact: 737px;
+    --gap-contact: 100px;
 
-    --width-contact-boxizq: 400px;
-    --margin-left-boxizq: 20px;
+    --width-contact-box: 380px;
     --width-icono-redes: 100px;
-    --iconos-redes-position: 0px;
+    --iconos-redes-position: 40px;
 
-    --width-mobile: 400px;
-    --height-mobile: 80%;
 }
 img{
     max-width: 100%;                             /* Para todas las imágenes */
     height: auto;
 }
 body{
-    background-color: #ececec;
+    background-color: #f5f6f7;
     width: 100%;
+}
+#Welcome-page{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border: none;
+    width: 100%;                                        /* Caja Pagina Bienvenida */
+    height: var(--height-welcome-page);
+    
 }
 header{
     z-index: 100;
@@ -63,7 +70,7 @@ header{
     align-items: center;
    
     border-radius: 0% 0% 25% 25%;
-    box-shadow: rgba(129, 129, 129, 0.2) 0px 5px 10px;
+    box-shadow: rgba(104, 104, 104, 0.2) 0px 4px 7px;
     background-color: rgb(255, 255, 255,.01);
     backdrop-filter: blur(0.1px);
 }
@@ -74,16 +81,21 @@ header #logo{
     width: var(--width-logo);
     box-shadow: rgba(46, 195, 240, 0.4) -5px 5px, rgba(100, 210, 253, 0.3) -10px 10px, rgba(96, 212, 241, 0.2) -15px 15px, rgba(94, 216, 247, 0.1) -20px 20px, rgba(75, 225, 245, 0.05) -25px 25px;
     border-radius: 50% 20% 80% 20%;
-    animation-name: fire-blue;
+    animation: move-icon 2s linear infinite;
+    transition: .8s;
 }
-
-
-
-
-
-
-
-
+@keyframes move-icon{
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: 5px;
+    }
+}
+header #logo:hover{
+    transform: rotate(-5deg);
+    transition: .8s;
+}
 
 header #btn-nav{
     display: none;
@@ -127,8 +139,12 @@ header .nav a{
     color: rgb(43, 42, 42);  
     padding: var(--padding-nav-a) 1.5vw;                         /* Enlaces del Nav */
     background-image: linear-gradient(to right top, rgb(211, 218, 229,1), rgb(188, 216, 239,1), rgb(154, 215, 245,1), rgb(107, 216, 244,1), rgb(18, 216, 235,1));
-    border-radius: 5px;
-    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
+    border-radius: 20px;
+    box-shadow: 6px 10px 10px -3px  rgba(0, 0, 0, 0.04);
+    transition: .7s ease;
+}
+header .nav a:hover{
+    box-shadow: 1px 7px 4px -6px rgba(0, 0, 0, 0.4);
 }
 @media (max-width:800px){
     header label{
@@ -150,28 +166,6 @@ header .nav a{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#Welcome-page{
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    border: none;
-    width: 100%;                                        /* Caja Pagina Bienvenida */
-    height: var(--height-welcome-page);
-    
-}
 #Welcome-page #Photo_and_data{
     position: relative;
     
@@ -184,7 +178,7 @@ header .nav a{
     z-index: 1;
     display: flex;
     flex-direction: column;   
-    justify-content: space-around;                       /* Caja Foto y Datos */
+                                                                    /* Caja Foto y Datos */
     align-items: center;
     
     align-self: center;
@@ -193,10 +187,19 @@ header .nav a{
     background-color: rgb(255, 255, 255,.7);
     backdrop-filter: blur(2px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*animation: move-photo-data 6s linear infinite;*/
+}
+@keyframes move-photo-data{
+    0%, 100%{
+        top: 130px;
+    }
+    50%{
+        top: 125px;
+    }
 }
 #Welcome-page #Photo_and_data h1{
     
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: var(--fontsize-h1);
     color: #131313;  
     text-align: center;
@@ -213,7 +216,7 @@ header .nav a{
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255,.01);
     box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
-    
+    margin-top: 15px;
 }
 .box_wave1{
     z-index: 30;
@@ -291,70 +294,82 @@ header .nav a{
     }
 }
 #Contact_section{
+    width: 100%;
+    height: var(--height-contact);
+
     position: relative;
     top: var(--top-contact);
-    display: flex;                                           /* Caja Contacto */
-    flex-direction: row;
-    justify-content: space-evenly;
+
+    display: flex;        
+    flex-direction: row;                              /* Caja Contacto */
+    justify-content: center;
     align-items: center;
-    height: var(--height-contact);
-   
-    width: 100%;
-    border: none;
     flex-wrap: wrap;
     gap: var(--gap-contact);
+
+    border: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    
 }
-#Contact_section #box_contact_links{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;                                   /* Caja Grande Izquierda */
-    padding: 45px 10px 10px 10px;
-    
+#Contact_section #box_contact{  
+    width: var(--width-contact-box);
+    height: 70%;
+
     position: relative;
     top: 5%;
-    width: var(--width-contact-boxizq);
-    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;     
+    gap: 10px;                              /* Las 2 cajas */
+    padding: 10px;
+
     border: 1px solid rgb(255, 255, 255,.7);
     border-radius: 30px;
-    background-color: rgb(255, 255, 255,.7);
-    backdrop-filter: blur(2px);
+    background-color: rgb(255, 255, 255,.01);
+    backdrop-filter: blur(3px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-left: var(--margin-left-boxizq);
 }
-#Contact_section #box_contact_links h3{
+h3{position: relative;
+    top: 10%;
     font-size: 2em;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(43, 43, 43);
 }
-#Contact_section #box_contact_links p{
-    font-size: 1.2em;
+#Contact_section #box_contact p{
+    position: relative;
+    top: 10%;
+    font-size: 1.3em;
     margin-top: 10%;
-    color: rgb(22, 22, 22);
+    color: rgb(43, 43, 43);
 }
 
-#Contact_section #box_contact_links #links{
+#Contact_section #box_contact #links{
+    position: relative;
+    top: 20%;
+
     display: flex;
     flex-direction: row;                                     /* Caja Enlaces Iconos */
     justify-content: space-between;
     align-items: center;
     
     padding: 10px;
-    margin-top: 75.7px;
 }
 
-#Contact_section #box_contact_links #links .icons{
+#Contact_section #box_contact #links .icons{
     position: relative;
     bottom: var(--iconos-redes-position);
     width: 150px;
 }
-#Contact_section #box_contact_links #links .icons a{
+#Contact_section #box_contact #links .icons a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#Contact_section #box_contact_links #links .icons a p{
+#Contact_section #box_contact #links .icons a p{
     position: absolute;
     top: 200px;
     margin-top: 15.14px;
@@ -365,17 +380,17 @@ header .nav a{
     position: relative;
     width: var(--width-icono-redes);
     border-radius: 50%;
-    animation: rebota 1s alternate infinite ease-in;
+    animation: bounce 1s alternate infinite ease-in;
 }
 #iconoGithub{
     position: relative;
     width: var(--width-icono-redes);
-    animation: rebota 1s alternate infinite ease-in;
+    animation: bounce 1s alternate infinite ease-in;
     animation-delay: 1s;
 }
 .shadow{
   width: var(--width-icono-redes);
-  height: 1px;
+  height: 1px;                                                /* Shadow */
   background: #000;
   box-shadow: 0 0 5px 5px #000;
   border-radius: 50%;
@@ -383,197 +398,87 @@ header .nav a{
   top: 188px; 
   opacity: .2;
   transform: scale(0.5);
-  animation: sombra 1s alternate infinite ease-in;
+  animation: shadow 1s alternate infinite ease-in;
 }
 #shadow_git{
-    animation: sombra_git 1s alternate infinite ease-in;
+    animation: shadow_git 1s alternate infinite ease-in;
 }
-@keyframes sombra{ 
-  
+@keyframes shadow{ 
   100%{
     transform: scale(1);
-    opacity: .5
+    opacity: .5                                           /* Animation Shadow */
   }
 }
-
-@keyframes sombra_git{ 
-  
+@keyframes shadow_git{ 
   0%{
     transform: scale(1);
     opacity: .5
   }
 }
-
-@keyframes rebota{
+@keyframes bounce{
   90%{
     height: 100px;
-  }
-  
+  }                                                     /* Animation Bote */
   100%{
     transform: translateY(100px);
     height: 80px;
   }
 }
-
-
-
-
-
-
-
-
-#Contact_section #Mobile{
-    position: relative;
-    top: 5%;
-    border: 2px solid rgb(41, 243, 243);                           /* Caja grande Celular */
-    width: var(--width-mobile);
-    height: var(--height-mobile);
-    border-radius: 37px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-right: var(--margin-left-boxizq);
-}
-#Contact_section #Mobile #Mobile_edge{
+form{
     width: 100%;
-    height: 100%;                                                  /* Primera capa Borde Celular */
-    border: 2px solid rgb(75, 200, 231);
-    border-radius: 35px;
-}
-#Mobile #Mobile_edge div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(110, 108, 108);
-    border-radius: 34px;
-    background-color: rgb(248, 245, 245);
-}
-#Mobile #Mobile_edge div div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    height: 97%;                                                   /* Ultima capa Borde Celular */
-    border: 2px solid rgb(58, 57, 57);
-    border-radius: 28px 28px 31px 31px;
-    /*background-image: linear-gradient(to right top, #26eded, #01e2f7, #24d6fc, #48c9fc, #66bbf6, #5ca8dc, #5295c3, #4982aa, #2b647c, #1c4751, #132a2c, #020d0c);*/
-}
-#Mobile_edge div div #Mobile__top{
-    width: 100%;
-    border-radius: 48px 48px 0px 0px;                              /* Mobile Top */
-    height: 5%;
-    background-image: linear-gradient(to right top, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
-    border: 0.1px solid rgb(243, 242, 242);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 15%;
-    
-}
-#Mobile_edge div div #Mobile__head{
-    width: 100%;                                                    /* Mobile Head */
-    border-radius: 0%;
-    height: 10%;
-    background-image: linear-gradient(to right bottom, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
-    border: 0.1px solid rgb(243, 242, 242);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3%;
-}
-#Mobile_edge div div #Mobile__body{
-    width: 100%;                                                    /* Mobile Body */
-    border-radius: 0%;
-    height: 75%;
-    background-image: linear-gradient(to top, #f0f9f9, #f0f9fa, #f1f8fa, #f2f8fa, #f3f7fa, #f2f6f9, #f2f6f9, #f1f5f8, #eff4f7, #ecf4f5, #ebf3f3, #e9f2f1);
-    border: 0.1px solid rgb(243, 242, 242);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#Mobile_edge div div #Mobile__bottom{
-    width: 100%;                                                    /* Mobile Bottom */
-    border-radius: 0px 0px 30px 30px;
-    height: 10%;
-    background-image: radial-gradient(circle, #5ef6f6, #47e5fc, #49d3fd, #5dbff7, #74abea, #6f9fd8, #6a93c6, #6588b5, #557f9c, #517583, #52686d, #555b5b);
-    border: 0.1px solid rgb(243, 242, 242);
-}
-
-
-
-
-
-
-
-#Mobile_edge div div #Mobile__top img{
-    height: 60% ;                                                  /* Mobile Top *       */ 
-}
-
-
-
-
-
-
-
-
-
-
-#Mobile_edge div div #Mobile__head img {
-    height: 80%;                                                  /* Mobile Head *       */
-    border: 0.1px solid rgb(126, 124, 124);
-    border-radius: 50%;
-}
-#Mobile_edge div div #Mobile__head div{
-    align-items: center;
-    border: 0;
-    background: none;
-    width: 15%;
     height: 70%;
-    border-radius: 0%;
     position: relative;
-    right: 29%;
-}
-#Mobile_edge div div #Mobile__head p{
-    color: rgb(235, 230, 230);
-    font-size: 1em;
-    text-align: center;
-}
+    top: 15%;
 
-
-
-
-
-
-#Mobile_edge div div #Mobile__body form{                         /* Mobile Body *       */
-    /*border: 1px solid black;*/
-    height: 60%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 3%;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 0;
+  
 }
-#Mobile_edge div div #Mobile__body div{
-    align-self: flex-start;
-    border-radius: 10px;
-    height: 20%;
-    width: 65%;
-    border: 0;
-    background: none;
-}
-#Mobile_edge div div #Mobile__body div input{
-    height: 80%;
-    width: 90%;
+form input{
+    width: 75%;
+    height: 13%;
+
+    align-self: center;
+    margin-bottom: 7%;
+
+    padding: 0px 13px 0px 8px;
     font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 141);
 }
 textarea{
+    height: auto;
+    width: 270px;
+
+    padding: 10px;
     resize: none;
     font-size: 1em;
-    width: 90%;
-    padding: 5% 5%;
+    
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 141);
+
+    overflow: auto;
 }
+button{
+    width: 30%;
+    height: 13%;
+    border: none;
+    border-radius: 25px;
+    transition: .5s;
+    font-size: 1.1em;
+    background-color: rgb(33, 150, 243,.7);
+    
+}
+button:hover{
+    background-color: rgb(33, 150, 243);
+    color: white;
+}
+
 
 @media (max-width: 1452px){
     :root{
@@ -603,17 +508,14 @@ textarea{
 
     --top-wave2: 1148.5px;
 
-    --top-contact: 131.4px;
+    --top-contact: 71.4px;
     --height-contact: 637px;
-    --gap-contact: 50px 50px;
+    --gap-contact: 85px;
 
-    --width-contact-boxizq: 350px;
-    --margin-left-boxizq: 20px;
+    --width-contact-box: 350px;
     --width-icono-redes: 100px;
     --iconos-redes-position: 50px;
 
-    --width-mobile: 350px;
-    --height-mobile: 80%;
 }
 #Contact_section #box_contact_links h3{
     font-size: 1.5em;
