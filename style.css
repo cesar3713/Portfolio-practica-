@@ -1,14 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-:root{
-    --height-header: 90px;
-    --width-logo: 90px;
 
-    --padding-nav-a: 6.57px;
+:root{
+    --height-header: 80px;
+    --width-logo: 80px;
+
+    --padding-nav-a: 5.57px;
 
     --height-welcome-page: 737px;
 
@@ -27,7 +29,7 @@
 
     --top-proyects: 65.7px;
     --height-proyects: 737px;
-    --height-proyects-proyect: 585.6px;
+    --height-proyects-proyect: 620.6px;
 
     --top-wave2: 1338.5px;
 
@@ -117,7 +119,7 @@ header .nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30.5%;
+    width: 400px;
     height: 70px;                                         /* Caja Nav */
     padding-left: 1vw; 
     padding-right: 1vw;      
@@ -137,16 +139,17 @@ header .nav ul li{
 header .nav a{
     text-decoration: none;
     color: rgb(43, 42, 42);  
-    padding: var(--padding-nav-a) 1.5vw;                         /* Enlaces del Nav */
+    padding: var(--padding-nav-a) 1.2vw;                         /* Enlaces del Nav */
     background-image: linear-gradient(to right top, rgb(211, 218, 229,1), rgb(188, 216, 239,1), rgb(154, 215, 245,1), rgb(107, 216, 244,1), rgb(18, 216, 235,1));
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 6px 10px 10px -3px  rgba(0, 0, 0, 0.04);
     transition: .7s ease;
 }
 header .nav a:hover{
     box-shadow: 1px 7px 4px -6px rgba(0, 0, 0, 0.4);
+    
 }
-@media (max-width:800px){
+/*@media (max-width:800px){
     header label{
         display: inline-block;
     }
@@ -163,7 +166,7 @@ header .nav a:hover{
     #btn-nav:checked ~ .nav{
         left: 0%;
     }
-}
+}*/
 
 
 #Welcome-page #Photo_and_data{
@@ -308,11 +311,11 @@ header .nav a:hover{
     gap: var(--gap-contact);
 
     border: none;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
     
 }
-#Contact_section #box_contact{  
+#Contact_section .box_contact{  
     width: var(--width-contact-box);
     height: 70%;
 
@@ -331,6 +334,7 @@ header .nav a:hover{
     background-color: rgb(255, 255, 255,.01);
     backdrop-filter: blur(3px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 h3{position: relative;
     top: 10%;
@@ -338,7 +342,7 @@ h3{position: relative;
     text-align: center;
     color: rgb(43, 43, 43);
 }
-#Contact_section #box_contact p{
+#Contact_section .box_contact p{
     position: relative;
     top: 10%;
     font-size: 1.3em;
@@ -346,7 +350,7 @@ h3{position: relative;
     color: rgb(43, 43, 43);
 }
 
-#Contact_section #box_contact #links{
+#Contact_section .box_contact #links{
     position: relative;
     top: 20%;
 
@@ -358,18 +362,18 @@ h3{position: relative;
     padding: 10px;
 }
 
-#Contact_section #box_contact #links .icons{
+#Contact_section .box_contact #links .icons{
     position: relative;
     bottom: var(--iconos-redes-position);
     width: 150px;
 }
-#Contact_section #box_contact #links .icons a{
+#Contact_section .box_contact #links .icons a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#Contact_section #box_contact #links .icons a p{
+#Contact_section .box_contact #links .icons a p{
     position: absolute;
     top: 200px;
     margin-top: 15.14px;
@@ -451,7 +455,7 @@ form input{
     border: 1px solid rgb(141, 141, 141);
 }
 textarea{
-    height: auto;
+    height: 60%;
     width: 270px;
 
     padding: 10px;
@@ -465,6 +469,8 @@ textarea{
     overflow: auto;
 }
 button{
+    position: relative;
+    bottom: 10%;;
     width: 30%;
     height: 13%;
     border: none;
@@ -483,7 +489,7 @@ button:hover{
 @media (max-width: 1452px){
     :root{
     --height-header: 80px;
-    --width-logo: 80px;
+    --width-logo: 70px;
 
     --padding-nav-a: 4.57px;
 
@@ -504,7 +510,7 @@ button:hover{
 
     --top-proyects: 75.7px;
     --height-proyects: 637px;
-    --height-proyects-proyect: 515.6px;
+    --height-proyects-proyect: 555.6px;
 
     --top-wave2: 1148.5px;
 
@@ -517,10 +523,144 @@ button:hover{
     --iconos-redes-position: 50px;
 
 }
-#Contact_section #box_contact_links h3{
-    font-size: 1.5em;
+header .nav{
+    width: 350px;
 }
-#Contact_section #box_contact_links p{
-    font-size: 1em;
+header .nav a{
+    padding: var(--padding-nav-a) 14px;     
+}
+h3{
+    top: 8%;
+    font-size: 1.7em;
+}
+#Contact_section .box_contact p{
+    font-size: 1.2em;
+    top: 8%;
+    margin-top: 5%;
+}
+form{
+    height: 74%;
+}
+textarea{
+    width: 245px;
+}
+button{
+    bottom: 12%;
+}
+header .nav{
+    right: 3.5vw;
 }
 }
+
+@media (max-width: 950px) {
+    header .nav{
+        width: 300px;
+    }
+    #Contact_section{
+        gap: 50px;
+    }
+    
+    
+}
+
+@media (max-width: 902px) {
+    
+    :root{
+    --height-header: 80px;
+    --width-logo: 70px;
+
+    --padding-nav-a: 4.57px;
+
+    --height-welcome-page: 637px;
+
+    --height-photo-data: 380px;
+    --width-photo-data: 280px;
+    --top-photo-data: 110px;
+    --padding-photo-data: 30px 20px;
+    --fontsize-h1: 1.4em;
+    --fontsize-job: 1.2em;
+    --photo-cesar: 150px;
+
+    --top-wave1: 313.89999999999997px;
+    --width-wave: 6000px;
+    --height-wave: 454.2px;
+    --move-wave: -1600px;
+
+    --top-proyects: 75.7px;
+    --height-proyects: 637px;
+    --height-proyects-proyect: 555.6px;
+
+    --top-wave2: 1148.5px;
+
+    --top-contact: 111.4px;
+    --height-contact: 637px;
+    --gap-contact: 35px;
+
+    --width-contact-box: 350px;
+    --width-icono-redes: 100px;
+    --iconos-redes-position: 10px;
+
+}
+#Contact_section{
+    width: 100%;
+    height: 1030px;
+
+    position: relative;
+    top: var(--top-contact);
+
+    display: flex;        
+    flex-direction: column;                              /* Caja Contacto */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--gap-contact);
+
+    border: none;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 5%;
+}
+#Contact_section .box_contact{  
+    width: var(--width-contact-box);
+    height: 70%;
+
+    position: relative;
+   
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;     
+    gap: 0px;                              /* Las 2 cajas */
+    padding: 10px;
+
+    border: 1px solid rgb(255, 255, 255,.7);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255,.01);
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#box_form{
+    margin-bottom: 50px;
+}
+#Contact_section .box_contact p{
+    font-size: 1.2em;
+    top: 10%;
+    margin-top: 5%;
+}
+}
+@media (max-width: 680px) {
+    header .nav{
+        right: 1.0vw;
+    }
+    header{
+        height: 70px;
+    }
+    header #logo{   
+    position: relative;
+    left: 7vw;
+    width: 65px;   
+}
+}
+
