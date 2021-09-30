@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 *{
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +11,7 @@
     --height-header: 80px;
     --width-logo: 80px;
 
-    --padding-nav-a: 5.57px;
+    --padding-nav-a: 1px;
 
     --height-welcome-page: 737px;
 
@@ -48,6 +49,8 @@ img{
 }
 body{
     background-color: #f5f6f7;
+    /*background-color: white;*/
+   
     width: 100%;
 }
 #Welcome-page{
@@ -59,6 +62,7 @@ body{
     width: 100%;                                        /* Caja Pagina Bienvenida */
     height: var(--height-welcome-page);
     
+   
 }
 header{
     z-index: 100;
@@ -139,16 +143,15 @@ header .nav ul li{
 header .nav a{
     text-decoration: none;
     color: rgb(43, 42, 42);  
-    padding: var(--padding-nav-a) 1.2vw;                         /* Enlaces del Nav */
-    background-image: linear-gradient(to right top, rgb(211, 218, 229,1), rgb(188, 216, 239,1), rgb(154, 215, 245,1), rgb(107, 216, 244,1), rgb(18, 216, 235,1));
-    border-radius: 25px;
-    box-shadow: 6px 10px 10px -3px  rgba(0, 0, 0, 0.04);
-    transition: .7s ease;
+    padding: var(--padding-nav-a) .5vw;                            /* Enlaces del Nav */
+   /* border-top: 1px solid rgba(0, 0, 0, 0.37); */ 
+    border-left: 1px solid rgba(0, 0, 0, 0.37);                    
 }
 header .nav a:hover{
-    box-shadow: 1px 7px 4px -6px rgba(0, 0, 0, 0.4);
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
 }
+
+
 /*@media (max-width:800px){
     header label{
         display: inline-block;
@@ -187,19 +190,13 @@ header .nav a:hover{
     align-self: center;
     border: 1px solid rgb(255, 255, 255,.7);
     border-radius: 30px;
-    background-color: rgb(255, 255, 255,.7);
-    backdrop-filter: blur(2px);
+    
+    background-color: rgb(255, 255, 255,.01);
+    backdrop-filter: blur(3px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /*animation: move-photo-data 6s linear infinite;*/
+    
 }
-@keyframes move-photo-data{
-    0%, 100%{
-        top: 130px;
-    }
-    50%{
-        top: 125px;
-    }
-}
+
 #Welcome-page #Photo_and_data h1{
     
     margin-top: 30px;
@@ -218,8 +215,9 @@ header .nav a:hover{
     width: var(--photo-cesar);                                           /* Foto de Cesar */
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255,.01);
-    box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+    /*box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;*/
     margin-top: 15px;
+    
 }
 .box_wave1{
     z-index: 30;
@@ -264,6 +262,8 @@ header .nav a:hover{
     background-color: #2196F3;
     opacity: .8;
     border: none;
+    
+    
 }
 #All_projects_section #projects{
     height: var(--height-proyects-proyect);
@@ -277,7 +277,8 @@ header .nav a:hover{
     overflow-y: hidden;
     position: absolute;
     top: var(--top-wave2);
-}
+    
+}   
 .wave2{
     width: var(--width-wave);
     height: var(--height-wave);
@@ -318,7 +319,7 @@ header .nav a:hover{
 #Contact_section .box_contact{  
     width: var(--width-contact-box);
     height: 70%;
-
+    
     position: relative;
     top: 5%;
 
@@ -346,13 +347,12 @@ h3{position: relative;
     position: relative;
     top: 10%;
     font-size: 1.3em;
-    margin-top: 10%;
+    margin-top: 5%;
     color: rgb(43, 43, 43);
 }
-
 #Contact_section .box_contact #links{
     position: relative;
-    top: 20%;
+    top: 25%;
 
     display: flex;
     flex-direction: row;                                     /* Caja Enlaces Iconos */
@@ -361,7 +361,6 @@ h3{position: relative;
     
     padding: 10px;
 }
-
 #Contact_section .box_contact #links .icons{
     position: relative;
     bottom: var(--iconos-redes-position);
@@ -440,11 +439,10 @@ form{
     align-items: center;
     
     padding: 0;
-  
 }
 form input{
     width: 75%;
-    height: 13%;
+    height: 12%;
 
     align-self: center;
     margin-bottom: 7%;
@@ -452,10 +450,18 @@ form input{
     padding: 0px 13px 0px 8px;
     font-size: 1em;
     border-radius: 10px;
-    border: 1px solid rgb(141, 141, 141);
+    border: 0;
+    border-bottom: 1px solid rgb(33, 150, 243,.7);
+    
+    
+    letter-spacing: .5px;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
 }
 textarea{
-    height: 60%;
+    height: 65%;
     width: 270px;
 
     padding: 10px;
@@ -464,24 +470,30 @@ textarea{
     
     margin-bottom: 5%;
     border-radius: 10px;
-    border: 1px solid rgb(141, 141, 141);
-
+    
+    border: 1px solid rgb(33, 150, 243,.7);
     overflow: auto;
+    letter-spacing: 1px;
+    background-color: transparent;
+    
+}
+textarea:focus{
+    outline: none;
 }
 button{
     position: relative;
-    bottom: 10%;;
+    bottom: 7%;;
     width: 30%;
     height: 13%;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: .5s;
-    font-size: 1.1em;
-    background-color: rgb(33, 150, 243,.7);
-    
+    font-size: 1.2em;
+    background-color: rgba(33, 149, 243, 0.644);
+    cursor: pointer;
 }
 button:hover{
-    background-color: rgb(33, 150, 243);
+    background-color: rgba(33, 149, 243, 0.836);
     color: white;
 }
 
@@ -491,7 +503,7 @@ button:hover{
     --height-header: 80px;
     --width-logo: 70px;
 
-    --padding-nav-a: 4.57px;
+    --padding-nav-a: 1px;
 
     --height-welcome-page: 637px;
 
@@ -523,6 +535,12 @@ button:hover{
     --iconos-redes-position: 50px;
 
 }
+#Contact_section .box_contact p{
+    margin-top: 10%;
+}
+#Contact_section .box_contact #links{
+    top: 20%;
+}
 header .nav{
     width: 350px;
 }
@@ -545,7 +563,7 @@ textarea{
     width: 245px;
 }
 button{
-    bottom: 12%;
+    bottom: 6%;
 }
 header .nav{
     right: 3.5vw;
@@ -559,8 +577,13 @@ header .nav{
     #Contact_section{
         gap: 50px;
     }
-    
-    
+    #Contact_section .box_contact p{
+    margin-top: 5%;
+    }
+    #Contact_section .box_contact #links{
+    position: relative;
+    top: 20%;
+    }
 }
 
 @media (max-width: 902px) {
@@ -569,7 +592,7 @@ header .nav{
     --height-header: 80px;
     --width-logo: 70px;
 
-    --padding-nav-a: 4.57px;
+    --padding-nav-a: 1px;
 
     --height-welcome-page: 637px;
 
@@ -641,6 +664,13 @@ header .nav{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
+#Contact_section .box_contact p{
+    margin-top: 10%;
+}
+#Contact_section .box_contact #links{
+    position: relative;
+    top: 20%;
+}
 #box_form{
     margin-bottom: 50px;
 }
@@ -661,6 +691,13 @@ header .nav{
     position: relative;
     left: 7vw;
     width: 65px;   
+}
+#Contact_section .box_contact p{
+    margin-top: 10%;
+}
+#Contact_section .box_contact #links{
+    position: relative;
+    top: 20%;
 }
 }
 
