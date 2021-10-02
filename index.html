@@ -12,11 +12,26 @@
 </head>
 <body>
 
+    <div>
+        <svg class="waves wave-header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(33, 149, 243, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(33, 149, 243, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(33, 149, 243, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(33, 149, 243, 0.1)" />
+            </g>
+        </svg>
+    </div>
 
     <section id="Welcome-page">                                       <!-- Sección Bienvenida -->
     
         <header>
 
+            
             <a href=""><img src="EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
             
             <input type="checkbox" name="" id="btn-nav">
@@ -48,26 +63,165 @@
         </article>
 
     </section>
-    
-    <div class="box_wave1">
-                                                                    <!--  Wave 1  -->
-        <div class="wave1"></div>
 
-    </div>
+   
 
-    <section id="All_projects_section">
+    <section class="about">
                                                                     <!--  Sección Proyectos  -->
-        <article id="projects">
+        <article id="lofi">
     
+        </article>
+
+        <article class="skills">
+
+            <div id="circle">
+
+                <!--HTML 5 MINI BOX -->
+                <div id="html5" class="ti">
+
+                    <div class='title-ti'><p>Html 5</p></div>
+
+                    <div class="percentage"><p>70%</p></div>
+
+                    <div class='wave-html5'></div>
+                    <div class='wave-html5 -two'></div>
+                    <div class='wave-html5 -three'></div>
+
+                </div>
+
+                <!--CSS 3 MINI BOX -->
+
+                <div id="css3" class="ti">
+                    
+                    <div class='title-ti'>
+                        <p>Css 3</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>75%</p>
+                    </div>
+                    
+                    <div class='wave-css3'></div>
+                    <div class='wave-css3 -two'></div>
+                    <div class='wave-css3 -three'></div>
+                    
+                </div>
+
+                <!--JAVASCRIPT MINI BOX -->
+
+                <div id="javaScript" class="ti">
+
+                    <div class='title-ti'>
+                        <p>Javascript</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>65%</p>
+                    </div>
+                    
+                    <div class='wave-javascript'></div>
+                    <div class='wave-javascript -two'></div>
+                    <div class='wave-javascript -three'></div>
+
+                </div>
+
+                <!--REACT MINI BOX -->
+
+                <div id="react" class="ti">
+
+                    <div class='title-ti'>
+                        <p>React</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>65%</p>
+                    </div>
+                    
+                    <div class='wave-react'></div>
+                    <div class='wave-react -two'></div>
+                    <div class='wave-react -three'></div>
+               
+                </div>
+
+                <!--ANGULAR MINI BOX -->
+
+                <div id="angular" class="ti">
+
+                    <div class='title-ti'>
+                        <p>Angular</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>60%</p>
+                    </div>
+                    
+                    <div class='wave-angular'></div>
+                    <div class='wave-angular -two'></div>
+                    <div class='wave-angular -three'></div>
+                 
+                </div>
+
+                <!--NODE JS MINI BOX -->
+
+                <div id="node" class="ti">
+
+                    <div class='title-ti'>
+                        <p>Node js</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>60%</p>
+                    </div>
+                    
+                    <div class='wave-node'></div>
+                    <div class='wave-node -two'></div>
+                    <div class='wave-node -three'></div>
+           
+                </div>
+
+                <!--JQUERY MINI BOX -->
+
+                <div id="jQuery" class="ti">
+
+                    <div class='title-ti'>
+                        <p>jQuery</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>65%</p>
+                    </div>
+                    
+                    <div class='wave-jquery'></div>
+                    <div class='wave-jquery -two'></div>
+                    <div class='wave-jquery -three'></div>
+  
+                </div>
+
+                <!--MONGO DB MINI BOX -->
+
+                <div id="mongoDb" class="ti">
+
+                    <div class='title-ti'>
+                        <p>MongoDB</p>
+                    </div>
+                    
+                    <div class="percentage">
+                        <p>65%</p>
+                    </div>
+                    
+                    <div class='wave-mongo'></div>
+                    <div class='wave-mongo -two'></div>
+                    <div class='wave-mongo -three'></div>
+  
+                </div>
+
+            </div>
+            
         </article>
     
     </section>
 
-    <div class="box_wave2">                                         <!--  Wave 2-->
     
-        <div class="wave2"></div>
-    
-    </div>
 
     <section id="Contact_section">
                                                                     <!--  Sección Contacto  -->            
@@ -122,6 +276,21 @@
 
     </section>
 
-    
+    <div>
+        <svg class="waves wave-contact" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(33, 149, 243, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(33, 149, 243, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(33, 149, 243, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(33, 149, 243, 0.1)" />
+            </g>
+        </svg>
+    </div>
+
+   
 </body>
 </html>
