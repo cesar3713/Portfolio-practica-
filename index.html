@@ -4,45 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Cesar</title>
-    <link rel="shortcut icon" href="EnviteIgneo.jpg">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/EnviteIgneo.jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/script.js"></script>
+    
     
 </head>
 <body>
 
-    <div>
-        <svg class="waves wave-header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(33, 149, 243, 0.7)" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(33, 149, 243, 0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(33, 149, 243, 0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(33, 149, 243, 0.1)" />
-            </g>
-        </svg>
-    </div>
+    
 
     <section id="Welcome-page">                                       <!-- Sección Bienvenida -->
     
         <header>
 
             
-            <a href=""><img src="EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
+            <a href=""><img src="images/EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
             
             <input type="checkbox" name="" id="btn-nav">
 
-            <label for="btn-nav"><img src="menu2 (2).png" alt=""></label>
+            <label for="btn-nav"><img src="images/menu2 (2).png" alt=""></label>
 
             <nav class="nav">             
                                                                             <!-- Nav -->
                 <ul>
                     <li><a href="#">Work</a> </li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>                                          
 
@@ -52,7 +43,7 @@
 
         <article id="Photo_and_data">
                                                                       <!--  Foto y trabajo  -->
-            <img src="Cesar.png" alt="Cesar"> 
+            <img src="images/Cesar.png" alt="Cesar"> 
 
             <h1>Julio Cesar Beas Suarez</h1>
 
@@ -64,17 +55,42 @@
 
     </section>
 
+    <section class="section-proyects"                           <!--  Seccion proyectos  -->
+
+
+        <h3>Proyects</h3>
+
+        <article id="proyect">
+
+            <div id="proyect-image">
+
+            </div>
+
+            <div id="proyect-description">
+                <h3>Portfolio</h3>
+                <p>Languages: Html5, Css3 y Javascript</p>
+                <p>Technologies: Node js</p>
+                <a href="">Repo GitHub</a>
+            </div>
+
+        </article>
+
+    </section>
    
 
-    <section class="about">
-                                                                    <!--  Sección Proyectos  -->
-        <article id="lofi">
-    
-        </article>
+    <section class="section-skills">
+                                                                    <!--  Sección Skills  -->
 
         <article class="skills">
 
+            <div id="skill-box">
+                <h3>Skills</h3>
+                <p id="skills-p">HTML/CSS, JavaScript<br>Responsive Website</p>
+                
+            </div>
+
             <div id="circle">
+
 
                 <!--HTML 5 MINI BOX -->
                 <div id="html5" class="ti">
@@ -225,7 +241,7 @@
 
     <section id="Contact_section">
                                                                     <!--  Sección Contacto  -->            
-        <div class="box_contact">
+        <div class="box_contact" id="contact-icons">
 
             <h3>Let's work together...</h3>
             <p>How do you take your coffee?</p>                     <!--  Caja Links Enlaces-->
@@ -233,7 +249,7 @@
             <div id="links">
                 <div class="icons">
                     <a href="">
-                        <img src="git.png" alt="" id="iconoGithub">
+                        <img src="images/git.png" alt="" id="iconoGithub">
                         <div class="shadow" id="shadow_git"></div>
                         <p>Github</p>
                     </a>
@@ -242,7 +258,7 @@
 
                 <div class="icons" id="Icono-Linkedin">
                     <a href="">
-                        <img src="Linkedin.jpg" alt="">
+                        <img src="images/Linkedin.jpg" alt="">
                         <div class="shadow"></div>
                         <p>Linkedin</p>
                     </a>
@@ -252,7 +268,7 @@
 
         </div>
 
-        <div class="box_contact" id="box_form">
+        <div class="box_contact" id="box-form">
 
             <h3>Leave your message</h3>
 
@@ -291,6 +307,6 @@
         </svg>
     </div>
 
-   
+
 </body>
 </html>
