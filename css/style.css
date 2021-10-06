@@ -42,8 +42,8 @@ html{
     --height-circle-proyect: 500px;
     --width-circle-proyect: 500px;
 
-    --width-boxys: 140px;
-    --height-boxys: 140px;
+    --width-boxys: 142px;
+    --height-boxys: 142px;
 
     --top-contact: 85px;
     --height-contact: 707px;
@@ -63,7 +63,7 @@ body{
     /*background-color: #f5f6f7;*/
     background-color: #F4F6FB;
     width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 #Welcome-page{
@@ -230,6 +230,7 @@ header .nav a:hover{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
 }
 .section-proyects h3{
   letter-spacing: .04em;
@@ -244,6 +245,7 @@ header .nav a:hover{
   align-items: center;
   border-radius: 20px;
   border: none;
+ 
 }
 .section-proyects #proyect #proyect-image{
   width: 50%;
@@ -676,9 +678,11 @@ header .nav a:hover{
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 #contact-icons{
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   
   /*background-image: linear-gradient(-225deg, #5d9eff98 0%, #b8dcffad 48%, #6bbaff9d 100%);*/
+
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   
 }
 h3{position: relative;
@@ -836,7 +840,7 @@ textarea:focus{
 }
 #submit{
     position: relative;
-    bottom: 3%;;
+    bottom: 4%;;
     width: 30%;
     height: 13%;
     border: none;
@@ -980,10 +984,63 @@ header .nav{
     border-radius: 0% 0% 50% 50%;
   }
 }
+@media (max-width: 1100px) {
+  :root{
+    --height-proyects: 1037px;
+    --height-proyect-sing: 850px;
+  }
+  .section-proyects{
+  width: 100%;
+  height: var(--height-proyects);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.section-proyects h3{
+  letter-spacing: .04em;
+}
+.section-proyects #proyect{
+  width: 430px;
+  height: var(--height-proyect-sing);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  top: 30px;
+}
+.section-proyects #proyect #proyect-image{
+  width: 100%;
+  height: 50%;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #00aae4;
+}
+#proyect-description{
+  width: 100%;
+  height: 50%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: white;
+  align-items: center;
+  border-radius: 0px 0px 20px 20px;
+  padding: 0px 25px;
+}
+
+}
 @media (max-width: 1075px) {
   .panel-btn{
     position: absolute;
-    right: 3px;
+    right: 10px;
    
     top: 3px;
   }
@@ -1011,7 +1068,9 @@ header .nav{
     
     background-color: #F4F6FB;
     opacity: 0;
-    transition: opacity .3s linear;
+    transform: translate(0,-101%);
+
+    transition: opacity .3s linear,transform .3s linear;
     
     }
     header .nav ul{
@@ -1060,9 +1119,9 @@ header .nav{
     background-color: #F4F6FB;
     
     opacity: 1;
+    transform: translate(0,0);
+    transition: opacity .3s linear,transform .3s linear;
     
-    transition: opacity .3s linear;
-     
     }
     header .nav-is-active ul{
 
@@ -1105,122 +1164,333 @@ header .nav{
     }
     #Contact_section .box_contact #links{
     position: relative;
-    top: 20%;
+    top: 25%;
     }
 }
 
 @media (max-width: 902px) {
     
     :root{
-    --height-header: 80px;
-    --width-logo: 70px;
+    --height-header: 65px;
+    --width-logo: 50px;
 
     --padding-nav-a: 1px;
 
     --height-welcome-page: 637px;
 
-    --height-photo-data: 380px;
-    --width-photo-data: 280px;
+    --height-photo-data: 320px;
+    --width-photo-data: 240px;
     --top-photo-data: 110px;
-    --padding-photo-data: 30px 20px;
+    --padding-photo-data: 10px 20px;
     --fontsize-h1: 1.4em;
-    --fontsize-job: 1.2em;
-    --photo-cesar: 150px;
+    --fontsize-job: 1.1em;
+    --photo-cesar: 140px;
 
-    --top-wave1: 313.89999999999997px;
-    --width-wave: 6000px;
-    --height-wave: 454.2px;
-    --move-wave: -1600px;
+    
+    
+    
 
-    --top-proyects: 75.7px;
-    --height-proyects: 637px;
-    --height-proyects-proyect: 555.6px;
+    --top-skills: 0px;
+    --height-skills: 737px;
 
-    --top-wave2: 1148.5px;
+    --height-circle-proyect: 430px;
+    --width-circle-proyect: 430px;
 
-    --top-contact: 111.4px;
-    --height-contact: 637px;
-    --gap-contact: 35px;
+    --width-boxys: 120px;
+    --height-boxys: 120px;
+
+
+
+    --top-contact: 0px;
+    --height-contact: 977px;
+    --gap-contact: 5px;
+    --height-twoboxs: 60%;
 
     --width-contact-box: 350px;
     --width-icono-redes: 100px;
-    --iconos-redes-position: 10px;
-
+    --iconos-redes-position: 45px;
 }
 #Contact_section{
-    width: 100%;
-    height: 1030px;
+    width: 100%; 
 
     position: relative;
-    top: var(--top-contact);
-
+    
     display: flex;        
     flex-direction: column;                              /* Caja Contacto */
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: var(--gap-contact);
-
+  
     border: none;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 5%;
-}
-#Contact_section .box_contact{  
-    width: var(--width-contact-box);
-    height: 70%;
-
-    position: relative;
-   
-
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;     
-    gap: 0px;                              /* Las 2 cajas */
-    padding: 10px;
-
-    border: 1px solid rgb(255, 255, 255,.7);
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255,.01);
-    backdrop-filter: blur(3px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-}
-#Contact_section .box_contact p{
-    margin-top: 10%;
 }
 #Contact_section .box_contact #links{
     position: relative;
-    top: 20%;
+    top: 25%;
 }
 #box_form{
     margin-bottom: 50px;
 }
 #Contact_section .box_contact p{
     font-size: 1.2em;
-    top: 10%;
+    top: 8%;
     margin-top: 5%;
 }
+
 }
-@media (max-width: 680px) {
-    header .nav{
-        right: 1.0vw;
-    }
-    header{
-        height: 70px;
-    }
-    header #logo{   
+@media (max-width: 870px) {
+  :root{
+    --top-skills: 0px;
+    --height-skills: 737px;
+
+    --height-circle-proyect: 730px;
+    --width-circle-proyect: 430px;
+
+    --width-boxys: 120px;
+    --height-boxys: 120px;
+  }
+  .section-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #circle{
+    border: none;
+    animation: none;
+    border-radius: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  #skill-box{
     position: relative;
-    left: 7vw;
-    width: 65px;   
+    top: 0px;
+  }
+  .skills .ti{
+    animation: none;
+    position: static;
+  }
+  }
+
+@media (max-width: 660px) {
+  :root{
+    --height-header: 55px;
+    --width-logo: 40px;
+  }
+  .panel-btn{
+    top: 1px;
+    right: -5px;
+  }
 }
-#Contact_section .box_contact p{
-    margin-top: 10%;
+@media (max-width: 550px) {
+  :root{
+  --height-header: 55px;
+    --width-logo: 40px;
+
+    --padding-nav-a: 1px;
+
+    --height-welcome-page: 637px;
+
+    --height-photo-data: 320px;
+    --width-photo-data: 240px;
+    --top-photo-data: 110px;
+    --padding-photo-data: 10px 20px;
+    --fontsize-h1: 1.4em;
+    --fontsize-job: 1.1em;
+    --photo-cesar: 140px;
+
+    --height-proyects: 857px;
+    --height-proyect-sing: 650px;
+    
+
+    --top-skills: 0px;
+    --height-skills: 737px;
+
+    --height-circle-proyect: 430px;
+    --width-circle-proyect: 430px;
+
+    --width-boxys: 120px;
+    --height-boxys: 120px;
+
+    --top-contact: 0px;
+    --height-contact: 977px;
+    --gap-contact: 5px;
+    --height-twoboxs: 60%;
+
+    
+
+    --width-contact-box: 350px;
+    --width-icono-redes: 100px;
+    --iconos-redes-position: 50px;
+  }
+  #Welcome-page{
+    border-radius: 0% 0% 2% 2%;
+  }
+  .section-proyects #proyect{
+  width: 80%;
+  top: 20px;
+  }
 }
-#Contact_section .box_contact #links{
-    position: relative;
-    top: 20%;
-}
+@media (max-width: 550px) {
+  :root{
+    --height-circle-proyect: 500px;
+    --width-circle-proyect: 85%;
+
+    --width-boxys: 120px;
+    --height-boxys: 120px;
+  }
+  #skill-box{
+    margin-bottom: -10px;
+  }
 }
 
+@media (max-width: 405px) {
+  :root{
+  --height-header: 55px;
+    --width-logo: 40px;
+
+    --padding-nav-a: 1px;
+
+    --height-welcome-page: 637px;
+
+    --height-photo-data: 320px;
+    --width-photo-data: 240px;
+    --top-photo-data: 110px;
+    --padding-photo-data: 10px 20px;
+    --fontsize-h1: 1.4em;
+    --fontsize-job: 1.1em;
+    --photo-cesar: 140px;
+
+    --height-proyects: 857px;
+    --height-proyect-sing: 650px;
+    
+
+    --top-skills: 0px;
+    --height-skills: 737px;
+
+    
+
+    --width-boxys: 40%;
+    --height-boxys: 20%;
+
+    --top-contact: 0px;
+    --height-contact: 977px;
+    --gap-contact: 5px;
+    --height-twoboxs: 60%;
+
+    
+
+    --width-contact-box: 99%;
+    --width-icono-redes: 100px;
+    --iconos-redes-position: 50px;
+  }
+  #Welcome-page{
+    border-radius: 0% 0% 2% 2%;
+  }
+  .section-proyects #proyect{
+  width: 80%;
+  top: 20px;
+  }
+  
+  p{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  #circle .ti{
+    min-width: 100px;
+  }
+}
+/*@media (max-width: 370px) {
+  .section-skills{
+    height: 1300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  :root{
+    --height-circle-proyect: 1500px;
+    --width-circle-proyect: 85%;
+
+    --width-boxys: 125px;
+    --height-boxys: 125px;
+  }*/
+
+@media (max-width: 354px) {
+  :root{
+    
+    --iconos-redes-position: 50px;
+  }
+  form input{
+    min-width: 240px;
+  }
+ 
+  #contact-icons p{
+    position: absolute;
+    top: -50px;
+  }
+  form{
+    position: relative;
+    top: 50px;
+  }
+}
+@media (max-width: 340px) {
+  .box_contact h3{
+    top: 20px;
+    margin-bottom: 0px;
+  }
+  :root{
+    
+    --iconos-redes-position: 70px;
+  }
+  form{
+    position: relative;
+    top: 36px;
+  }
+}
+@media (max-width: 333px) {
+  :root{
+    
+    --iconos-redes-position: 90px;
+  }
+}
+@media (max-width: 323px) {
+  :root{
+    --top-contact: 400px;
+    --height-contact: 977px;
+  }
+  #Contact_section{
+    
+    margin-bottom: 30px;
+  }
+  .wave-contact{
+    display: none;
+  }
+  body{
+    
+    height: 3650px;
+  }
+  #submit{
+    bottom: 6%;
+  }
+ 
+  /*#box-form *{
+    max-width: 80%;
+  }*/
+  textarea{
+    position: relative;
+    /*left: -10px;
+    right: 10px;*/
+    width: 220px;
+  }
+}
