@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Cesar</title>
     <link rel="shortcut icon" href="images/EnviteIgneo.jpg">
+
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     
-    <script src="js/script.js"></script>
-    
-    
+    <script type="module" src="js/script.js"></script>
+
 </head>
 <body>
 
@@ -23,24 +25,27 @@
         <header>
 
             
-            <a href=""><img src="images/EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
-            
-            <input type="checkbox" name="" id="btn-nav">
-
-            <label for="btn-nav"><img src="images/menu2 (2).png" alt=""></label>
+            <a href="#Welcome-page"><img src="images/EnviteIgneo.jpg" alt="" id="logo"></a>      <!--  Logo  -->
 
             <nav class="nav">             
                                                                             <!-- Nav -->
                 <ul>
-                    <li><a href="#">Work</a> </li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>                                          
+                    <li><a href="#section-proyects">Work</a></li>
+                    <li><a href="#section-skills">Skills</a></li>
+                    <li><a href="#Contact_section">Contact</a></li>
+                </ul>    
 
             </nav>
 
+            <button class="panel-btn hamburger hamburger--spring" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
         </header>
 
+      
         <article id="Photo_and_data">
                                                                       <!--  Foto y trabajo  -->
             <img src="images/Cesar.png" alt="Cesar"> 
@@ -55,7 +60,7 @@
 
     </section>
 
-    <section class="section-proyects"                           <!--  Seccion proyectos  -->
+    <section class="section-proyects" id="section-proyects">                         <!--  Seccion proyectos  -->
 
 
         <h3>Proyects</h3>
@@ -78,7 +83,7 @@
     </section>
    
 
-    <section class="section-skills">
+    <section class="section-skills" id="section-skills">
                                                                     <!--  Sección Skills  -->
 
         <article class="skills">
@@ -307,6 +312,6 @@
         </svg>
     </div>
 
-
+ 
 </body>
 </html>

@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
 *{
     
     padding: 0;
@@ -7,7 +12,9 @@
     box-sizing: border-box;
     font-family: Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 :root{
     --height-header: 70px;
     --width-logo: 60px;
@@ -26,14 +33,17 @@
 
     
     --height-proyects: 737px;
-    
+    --height-proyect-sing: 450px;
     
 
     --top-skills: 65.7px;
     --height-skills: 737px;
     
+    --height-circle-proyect: 500px;
+    --width-circle-proyect: 500px;
 
-    
+    --width-boxys: 140px;
+    --height-boxys: 140px;
 
     --top-contact: 85px;
     --height-contact: 707px;
@@ -93,6 +103,7 @@ header #logo{
     border-radius: 50% 20% 80% 20%;
     animation: move-icon 2s linear infinite;
     transition: .8s;
+    cursor: pointer;
 }
 @keyframes move-icon{
     0%, 100%{
@@ -107,19 +118,19 @@ header #logo:hover{
     transition: .8s;
 }
 
-header #btn-nav{
-    display: none;
+.panel-btn{
+  position: absolute;
+  z-index: 150;
+  top: 1vh;
+  display: none;
+  right: -100vw;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  
 }
-header label{
-    display: none;
-    width: 60px;
-}
-header label:hover{
-    cursor: pointer;
-    background-color: rgb(255, 255, 255,.01);
-    backdrop-filter: blur(0.1px);
-    border: 1px solid rgb(255, 255, 255,.1);  
-}
+
 header .nav{
     position: absolute;
     right: 5vw;
@@ -146,33 +157,16 @@ header .nav ul li{
 }
 header .nav a{
     text-decoration: none;
-    letter-spacing: .07em;
+    letter-spacing: .03em;
     padding: var(--padding-nav-a) .5vw;                            /* Enlaces del Nav */
     color: rgba(0, 0, 0, 0.781);   
-    
+    font-size: 0.9em;
+    font-family: Montserrat, Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header .nav a:hover{
     color: #000;
 }
 
-/*@media (max-width:800px){
-    header label{
-        display: inline-block;
-    }
-    header .nav{
-        position: absolute;
-        left: -80%;
-        transition: 0.2s;
-    }
-    header .nav ul{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #btn-nav:checked ~ .nav{
-        left: 0%;
-    }
-}*/
 
 
 #Welcome-page #Photo_and_data{
@@ -241,8 +235,8 @@ header .nav a:hover{
   letter-spacing: .04em;
 }
 .section-proyects #proyect{
-  width: 60%;
-  height: 450px;
+  width: 1000px;
+  height: var(--height-proyect-sing);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   display: flex;
   flex-direction: row;
@@ -335,8 +329,8 @@ header .nav a:hover{
     
     justify-self: center;                             /* circulo gira */
     align-self: center;
-    height: 500px;    /* cambiar valores mas adelante para el responsive design */
-    width: 500px;
+    height: var(--height-circle-proyect);    /* cambiar valores mas adelante para el responsive design */
+    width: var(--width-circle-proyect);
     border: none;
     animation: rotation 40s linear infinite;
 }
@@ -350,7 +344,7 @@ header .nav a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   z-index: 3;
   top: 40%;
 }
@@ -371,8 +365,8 @@ header .nav a:hover{
 .skills .ti{
     position: absolute;
     border: 1px solid rgb(230, 230, 230,.01);
-    width: 140px;                                 /* cajas de tecnologias */
-    height: 140px;
+    width: var(--width-boxys);                                 /* cajas de tecnologias */
+    height: var(--height-boxys);
     animation: moveSkill 40s linear infinite;
     border-radius: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -840,7 +834,7 @@ textarea{
 textarea:focus{
     outline: none;
 }
-button{
+#submit{
     position: relative;
     bottom: 3%;;
     width: 30%;
@@ -853,7 +847,7 @@ button{
     cursor: pointer;
     letter-spacing: .04em;
 }
-button:hover{
+#submit:hover{
     background-color: rgba(33, 149, 243, 0.836);
     color: white;
 }
@@ -889,6 +883,7 @@ button:hover{
   animation-delay: -5s;
   animation-duration: 20s;
 }
+
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
@@ -900,46 +895,54 @@ button:hover{
 
 @media (max-width: 1452px){
     :root{
-    --height-header: 80px;
-    --width-logo: 70px;
+    --height-header: 65px;
+    --width-logo: 60px;
 
     --padding-nav-a: 1px;
 
     --height-welcome-page: 637px;
 
-    --height-photo-data: 380px;
-    --width-photo-data: 280px;
+    --height-photo-data: 320px;
+    --width-photo-data: 240px;
     --top-photo-data: 110px;
-    --padding-photo-data: 30px 20px;
+    --padding-photo-data: 10px 20px;
     --fontsize-h1: 1.4em;
-    --fontsize-job: 1.2em;
-    --photo-cesar: 150px;
+    --fontsize-job: 1.1em;
+    --photo-cesar: 140px;
 
-    --top-wave1: 313.89999999999997px;
-    --width-wave: 6000px;
-    --height-wave: 454.2px;
-    --move-wave: -1600px;
-
-    --top-proyects: 75.7px;
+    
     --height-proyects: 637px;
-    --height-proyects-proyect: 555.6px;
+    --height-proyect-sing: 420px;
 
-    --top-wave2: 1148.5px;
+    --top-skills: 0px;
+    --height-skills: 737px;
 
-    --top-contact: 71.4px;
-    --height-contact: 637px;
+    --height-circle-proyect: 430px;
+    --width-circle-proyect: 430px;
+
+    --width-boxys: 120px;
+    --height-boxys: 120px;
+
+
+
+    --top-contact: 0px;
+    --height-contact: 507px;
     --gap-contact: 85px;
+    --height-twoboxs: 95%;
 
     --width-contact-box: 350px;
     --width-icono-redes: 100px;
     --iconos-redes-position: 50px;
 
 }
+#Contact_section{
+  padding-top: 35px;
+}
 #Contact_section .box_contact p{
     margin-top: 10%;
 }
 #Contact_section .box_contact #links{
-    top: 20%;
+    top: 25%;
 }
 header .nav{
     width: 350px;
@@ -968,12 +971,132 @@ button{
 header .nav{
     right: 3.5vw;
 }
+.section-proyects #proyect{
+  width: 800px;
 }
+}
+@media (max-width: 1130px) {
+  #Welcome-page{
+    border-radius: 0% 0% 50% 50%;
+  }
+}
+@media (max-width: 1075px) {
+  .panel-btn{
+    position: absolute;
+    right: 3px;
+   
+    top: 3px;
+  }
+  
+  
+    header .nav{
+        position: absolute;
+       
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        /*z-index: -50;*/
+       
+        
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        
+      border: none;
+    
+    background-color: #F4F6FB;
+    opacity: 0;
+    transition: opacity .3s linear;
+    
+    }
+    header .nav ul{
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+        padding: 0px;
+    }
+    header .nav a{
+    text-decoration: none;
+    letter-spacing: .07em;
+    border: none;
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.781); 
+    
+    }
+    
+    header .nav-is-active{
+      position: absolute;
+        
+       
+        
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        /*z-index: -50;*/
+       
+        
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        
+      border: none;
+    /*display: none;*/
+    background-color: #F4F6FB;
+    
+    opacity: 1;
+    
+    transition: opacity .3s linear;
+     
+    }
+    header .nav-is-active ul{
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+        padding: 0px;
+    }
+    header .nav-is-active ul li{
+      padding: 0px;
+    }
+   header .nav-is-active a{
+    text-decoration: none;
+    letter-spacing: .07em;
+    border: none;
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.781); 
+    
+    }
+    
+    }
+    
+    
+    
+
+
+
 
 @media (max-width: 950px) {
-    header .nav{
-        width: 300px;
-    }
     #Contact_section{
         gap: 50px;
     }

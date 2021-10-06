@@ -1,21 +1,19 @@
 
-/*var swiper = new Swiper('.swiper-container', {
+import hamburgerMenu from "./hamburger-menu.js";
 
-    pagination: '.swiper-pagination',
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflow: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true
-    },
-    loop: false
+const d = document;
 
-});*/
+d.addEventListener("DOMContentLoaded", e => {
+    hamburgerMenu(".panel-btn",".nav","ul li a");
+})
+
+
+
+
+
+
+
+
 
 
 
