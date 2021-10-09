@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Cesar</title>
-    <link rel="shortcut icon" href="images/EnviteIgneo.jpg">
+    <html lang="Spanish">
+    <meta name="DC.Language" scheme="RFC1766" content="Spanish">
+    <meta name="author" content="Julio Cesar Beas Suarez">
+    <meta name="reply-to" content="cesar3713@outlook.com"> 
+    <meta name="description" content="Portfolio de Julio Cesar Beas Suarez">
+    <meta name="keywords" content="Julio Cesar Beas Suarez,Portfolio,Software developer,Web developer">
+    <meta name="Resource-type" content="Document">
+    <meta name="robots" content="all">
+    
+    <link rev="made" href="mailto:cesar3713@outlook.com">
+    <link rel="shortcut icon" href="images/maletinE.ico">
 
     
     <link rel="stylesheet" href="css/normalize.css">
@@ -63,7 +72,7 @@
     <section class="section-proyects" id="section-proyects">                         <!--  Seccion proyectos  -->
 
 
-        <h3>Proyects</h3>
+        <h3 id="h3-proyects-title">Proyects</h3>
 
         <article id="proyect">
 
@@ -74,7 +83,7 @@
             <div id="proyect-description">
                 <h3>Portfolio</h3>
                 <p>Languages: Html5, Css3 y Javascript</p>
-                <p>Technologies: Node js</p>
+                <p>Apis: FormSubmit</p>
                 <a href="">Repo GitHub</a>
             </div>
 
@@ -218,21 +227,21 @@
   
                 </div>
 
-                <!--MONGO DB MINI BOX -->
+                <!--SQL MINI BOX -->
 
-                <div id="mongoDb" class="ti">
+                <div id="sql" class="ti">
 
                     <div class='title-ti'>
-                        <p>MongoDB</p>
+                        <p>SQL</p>
                     </div>
                     
                     <div class="percentage">
                         <p>65%</p>
                     </div>
                     
-                    <div class='wave-mongo'></div>
-                    <div class='wave-mongo -two'></div>
-                    <div class='wave-mongo -three'></div>
+                    <div class='wave-sql'></div>
+                    <div class='wave-sql -two'></div>
+                    <div class='wave-sql -three'></div>
   
                 </div>
 
@@ -253,8 +262,8 @@
 
             <div id="links">
                 <div class="icons">
-                    <a href="">
-                        <img src="images/git.png" alt="" id="iconoGithub">
+                    <a href="https://github.com/cesar3713" target="_blank">
+                        <img src="images/git.png" alt="github Cesar Beas Suarez" id="iconoGithub">
                         <div class="shadow" id="shadow_git"></div>
                         <p>Github</p>
                     </a>
@@ -262,8 +271,8 @@
                 </div>
 
                 <div class="icons" id="Icono-Linkedin">
-                    <a href="">
-                        <img src="images/Linkedin.jpg" alt="">
+                    <a href="https://www.linkedin.com/in/julio-cesar-beas-suarez-a74aa2216/" target="_blank">
+                        <img src="images/Linkedin.jpg" alt="Linkedin Cesar Beas Suarez">
                         <div class="shadow"></div>
                         <p>Linkedin</p>
                     </a>
@@ -277,29 +286,49 @@
 
             <h3>Leave your message</h3>
 
-            <form action="" id="survey-form">
+            <form target="_blank" action="https://formsubmit.co/4f559013131a233b84cca009cfd77b49" method="POST" id="survey-form">
+
+                
+
+                <input type="hidden" name="_ next" value="https://yourdomain.co/thanks.html">
+
+                <input type="hidden" name="_template" value="table">
 
                 <label for="name" id="name-label"></label>
-                <input type="text" name="Nombre y Apellido" id="name" placeholder="Name" required>
+                <input type="text" name="name" id="name" placeholder="Name" title="Name only accepts letters and blanks"          
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
             
                 <label for="email" id="email-label"></label>
-                <input type="email" name="Email" id="email" placeholder="Email" required>
+                <input type="email" name="email" id="email" placeholder="Email" title="Enter a valid email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                
                 <label for="Comentario">
-                    <textarea name="Comentario" id="Comentario" cols="25" rows="6" placeholder="Message"></textarea>
+                    <textarea name="Comentario" id="Comentario" cols="25" rows="6" placeholder="Message" required></textarea>
                 </label>
                 
-                <button type="submit" id="submit">Send
+                <button type="submit" id="submit">Send</button>
+
+                <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" class="contact-form-loader none" style="position: absolute;
+                    width: 20%;bottom: 0%; right: 10%;">
+                    <path fill="rgb(33, 150, 243,.7)"
+                        d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                            to="360 50 50" repeatCount="indefinite" />
+                    </path>
+                </svg>
+
+                <div class="contact-form-response none"><p>Your message was sent successfully</p></div>
                     
             </form>
 
         </div>
+        
 
     </section>
 
     <div>
         <svg class="waves wave-contact" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            viewBox="0 24 30 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
