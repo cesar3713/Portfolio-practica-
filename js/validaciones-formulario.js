@@ -22,7 +22,7 @@ export default function contactFormValidations(){
                 console.log(json);
                 $loader.classList.add("none");
                 $response.classList.remove("none");
-                $response.innerHTML=`<p>${json.message}`;
+                
                 $form.reset();
             })
             .catch(err=>{
@@ -32,7 +32,7 @@ export default function contactFormValidations(){
             })
             .finally(()=>setTimeout(()=>{
                 $response.classList.add("none");
-                $response.innerHTML="";
+               
             },4500));
 
         /*setTimeout(()=>{

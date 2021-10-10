@@ -258,7 +258,7 @@ header .nav a:hover{
   background-color: #358cd8c5;
 }
 .section-proyects #proyect{
-  width: 1000px;
+  width: 850px;
   height: var(--height-proyect-sing);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   display: flex;
@@ -956,8 +956,8 @@ textarea:focus{
     --photo-cesar: 140px;
 
     
-    --height-proyects: 637px;
-    --height-proyect-sing: 420px;
+    --height-proyects: 587px;
+    --height-proyect-sing: 400px;
 
     --top-skills: 0px;
     --height-skills: 737px;
@@ -1017,7 +1017,7 @@ header .nav{
     right: 3.5vw;
 }
 .section-proyects #proyect{
-  width: 800px;
+  width: 700px;
 }
 }
 @media (max-width: 1130px) {
@@ -1027,8 +1027,8 @@ header .nav{
 }
 @media (max-width: 1100px) {
   :root{
-    --height-proyects: 1037px;
-    --height-proyect-sing: 850px;
+    --height-proyects: 847px;
+    --height-proyect-sing: 650px;
   }
   .section-proyects{
   width: 100%;
@@ -1038,7 +1038,7 @@ header .nav{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+  margin-bottom: 20px;
 }
 .section-proyects h3{
   letter-spacing: .04em;
@@ -1350,7 +1350,7 @@ header .nav{
     --fontsize-job: 1.1em;
     --photo-cesar: 140px;
 
-    --height-proyects: 857px;
+    --height-proyects: 847px;
     --height-proyect-sing: 650px;
     
 
@@ -1377,6 +1377,9 @@ header .nav{
   #Welcome-page{
     border-radius: 0% 0% 2% 2%;
   }
+  .section-proyects{
+    margin-bottom: 0px;
+  }
   .section-proyects #proyect{
   width: 80%;
   top: 20px;
@@ -1393,6 +1396,10 @@ header .nav{
   #skill-box{
     margin-bottom: -10px;
   }
+  #section-skills{
+    margin-bottom: 45px;
+  }
+  
 }
 
 @media (max-width: 405px) {
@@ -1442,6 +1449,9 @@ header .nav{
   width: 80%;
   top: 20px;
   }
+  #section-skills{
+    margin-bottom: 0;
+  }
   
   p{
     text-align: center;
@@ -1452,6 +1462,10 @@ header .nav{
   #circle .ti{
     min-width: 100px;
   }
+  form input{
+    width: 245px;
+  }
+ 
 }
 /*@media (max-width: 370px) {
   .section-skills{
@@ -1473,7 +1487,7 @@ header .nav{
     --iconos-redes-position: 50px;
   }
   form input{
-    min-width: 240px;
+    min-width: 245px;
   }
  
   #contact-icons p{
@@ -1532,6 +1546,10 @@ header .nav{
     position: relative;
     /*left: -10px;
     right: 10px;*/
-    width: 220px;
+    width: 240px;
+  }
+  #submit{
+    height: 40px;
+    width: 100px;
   }
 }
