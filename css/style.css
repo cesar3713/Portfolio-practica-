@@ -275,13 +275,15 @@ header .nav a:hover{
   border: none;
   border-radius: 20px 0px 0px 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #358cd8c5;
  
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  
 }
 #proyect-image img{
+  width: 200px;
   border-radius: 20px;
   
 }
@@ -308,7 +310,7 @@ header .nav a:hover{
 }
 #proyect-description p{
   position: static;
-  color: rgb(29, 29, 29);
+  color: rgb(31, 31, 31);
   font-size: 1.2em;
   line-height: 130%;
   text-align: center;
@@ -418,7 +420,7 @@ header .nav a:hover{
 .title-ti{                               /* nombre de tecnologias*/
     letter-spacing: .07em;
     font-size: 1.1em;
-    color: rgb(24, 24, 24);
+    color: rgb(29, 29, 29);
     text-align: center;
     z-index: 2;
 }
@@ -722,7 +724,7 @@ h3{position: relative;
     top: 10%;
     font-size: 2em;
     text-align: center;
-    color: rgb(26, 26, 26);
+    color: rgb(32, 32, 32);
     
     
 }
@@ -731,7 +733,7 @@ h3{position: relative;
     top: 10%;
     font-size: 1.3em;
     margin-top: 5%;
-    color: rgb(31, 31, 31);
+    color: rgb(36, 36, 36);
     
 }
 #Contact_section .box_contact #links{
@@ -760,7 +762,7 @@ h3{position: relative;
     position: absolute;
     top: 200px;
     margin-top: 15.14px;
-    color: rgb(29, 29, 29); 
+    color: rgb(34, 34, 34); 
     text-decoration: none;
     letter-spacing: .04em;
 }
