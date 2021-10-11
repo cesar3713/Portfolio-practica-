@@ -272,6 +272,7 @@ header .nav a:hover{
 .section-proyects #proyect #proyect-image{
   width: 50%;
   height: 100%;
+  
   border: none;
   border-radius: 20px 0px 0px 20px;
   display: flex;
