@@ -1493,7 +1493,11 @@ header .nav{
     --width-boxys: 125px;
     --height-boxys: 125px;
   }*/
-
+@media (max-width: 367px) {
+  .contact-form-response{
+    bottom: 18.5%;
+  }
+}
 @media (max-width: 354px) {
   :root{
     
@@ -1564,5 +1568,8 @@ header .nav{
   #submit{
     height: 40px;
     width: 100px;
+  }
+  .contact-form-response{
+    bottom: 20%;
   }
 }
