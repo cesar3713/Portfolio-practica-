@@ -37,7 +37,7 @@ html{
     --height-proyect-sing: 400px;
     
 
-    --top-skills: 65.7px;
+    --top-skills: 55.7px;
     --height-skills: 737px;
     
     --height-circle-proyect: 500px;
@@ -243,7 +243,7 @@ header .nav a:hover{
 }
 .section-proyects #h3-proyects-title{
   letter-spacing: .04em;
-  margin-bottom: -20px;
+  margin-bottom: -45px;
 }
 #h3-proyects-title::after{
   content: "";
