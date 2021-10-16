@@ -42,7 +42,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 25px;
     height: 3px;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.541);
     border-radius: 10px;
     position: absolute;
     transition-property: transform;

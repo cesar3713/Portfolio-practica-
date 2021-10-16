@@ -14,6 +14,7 @@
 }
 html{
   scroll-behavior: smooth;
+  
 }
 :root{
     --height-header: 70px;
@@ -33,7 +34,7 @@ html{
 
     
     --height-proyects: 737px;
-    --height-proyect-sing: 450px;
+    --height-proyect-sing: 400px;
     
 
     --top-skills: 65.7px;
@@ -258,7 +259,7 @@ header .nav a:hover{
   background-color: #358cd8c5;
 }
 .section-proyects #proyect{
-  width: 850px;
+  width: 800px;
   height: var(--height-proyect-sing);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   display: flex;
