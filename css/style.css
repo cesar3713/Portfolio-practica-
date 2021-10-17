@@ -65,7 +65,7 @@ body{
 }
 
 body::-webkit-scrollbar{
-  width: 1px;
+  width: 4px;
   backdrop-filter: blur(0.1px);
   background-color: rgba(244,246,251,.01);
 
