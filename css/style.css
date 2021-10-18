@@ -1520,23 +1520,23 @@ header .nav{
   }
 }
 @media (max-width: 340px) {
-  .box_contact h3{
+  /*.box_contact h3{
     top: 20px;
     margin-bottom: 0px;
-  }
+  }*/
+  /*:root{
+    
+    --iconos-redes-position: 70px;
+  }*/
+  /*form{
+    position: relative;
+    top: 36px;
+  }*/
+}
+@media (max-width: 329px) {
   :root{
     
     --iconos-redes-position: 70px;
-  }
-  form{
-    position: relative;
-    top: 36px;
-  }
-}
-@media (max-width: 333px) {
-  :root{
-    
-    --iconos-redes-position: 90px;
   }
 }
 @media (max-width: 323px) {
