@@ -422,14 +422,14 @@ header .nav a:hover{
 }
 .title-ti{                               /* nombre de tecnologias*/
     letter-spacing: .07em;
-    font-size: 1.15em;
+    font-size: 1.13em;
     color: rgb(29, 29, 29);
     text-align: center;
     z-index: 2;
 }
 .percentage{                            /* porcentages: 60% = margin-top: -140%; */
     z-index: 2;                                     /*  65% = margin-top: -135%; */
-    font-size: 1.1em;                                 /*  70% = margin-top: -130%; */
+    font-size: 1.05em;                                 /*  70% = margin-top: -130%; */
     text-align: center;                             /*  75% = margin-top: -120%; */
 }
 @keyframes moveSkill{
