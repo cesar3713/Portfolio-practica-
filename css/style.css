@@ -422,14 +422,14 @@ header .nav a:hover{
 }
 .title-ti{                               /* nombre de tecnologias*/
     letter-spacing: .07em;
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: rgb(29, 29, 29);
     text-align: center;
     z-index: 2;
 }
 .percentage{                            /* porcentages: 60% = margin-top: -140%; */
     z-index: 2;                                     /*  65% = margin-top: -135%; */
-    font-size: 1em;                                 /*  70% = margin-top: -130%; */
+    font-size: 1.1em;                                 /*  70% = margin-top: -130%; */
     text-align: center;                             /*  75% = margin-top: -120%; */
 }
 @keyframes moveSkill{
@@ -1440,12 +1440,12 @@ header .nav{
     
 
     --top-skills: 0px;
-    --height-skills: 737px;
+    --height-skills: 747px;
 
     
 
     --width-boxys: 40%;
-    --height-boxys: 20%;
+    --height-boxys: 22%;
 
     --top-contact: 0px;
     --height-contact: 977px;
@@ -1476,7 +1476,7 @@ header .nav{
     text-align: center;
   }
   #circle .ti{
-    min-width: 100px;
+    min-width: 110px;
   }
   form input{
     width: 245px;
@@ -1505,6 +1505,24 @@ header .nav{
     width: 100px;
   }
   
+}
+@media (max-width: 352px) {
+  .section-skills {
+    height: 1300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+  }
+
+  :root {
+
+    --height-circle-proyect: 1500px;
+    --width-circle-proyect: 85%;
+
+    --width-boxys: 125px;
+    --height-boxys: 125px;
+    --top-contact: 45px;
+  }
 }
 @media (max-width: 354px) {
   :root{
@@ -1547,7 +1565,7 @@ header .nav{
 }
 @media (max-width: 323px) {
   :root{
-    --top-contact: 400px;
+    /*--top-contact: 400px;*/
     --height-contact: 977px;
   }
   #Contact_section{
