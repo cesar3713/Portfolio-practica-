@@ -1500,6 +1500,11 @@ header .nav{
   .contact-form-response{
     bottom: 18.5%;
   }
+  #submit{
+    height: 40px;
+    width: 100px;
+  }
+  
 }
 @media (max-width: 354px) {
   :root{
@@ -1516,8 +1521,9 @@ header .nav{
   }
   form{
     position: relative;
-    top: 50px;
+    top: 65px;
   }
+  
 }
 @media (max-width: 340px) {
   /*.box_contact h3{
