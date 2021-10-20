@@ -1699,14 +1699,14 @@ header .nav{
 
   #email:focus~#email-label {
     position: absolute;
-    top: 14.8%;
+    top: 14.4%;
     left: 8.8%;
 
   }
 
   .focus-label-email~#email-label {
     position: absolute;
-    top: 14.8%;
+    top: 14.4%;
     left: 8.8%;
 
   }
