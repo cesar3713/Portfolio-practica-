@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
     
-    
+    <script type="module" src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="js/script.js"></script>
     
 
@@ -293,15 +293,18 @@
 
                 <input type="hidden" name="_template" value="table">
 
-                <label for="name" id="name-label"></label>
-                <input type="text" name="name" id="name" placeholder="Nombre" title="Name only accepts letters and blanks"          
+                
+                <input type="text" name="name" id="name" placeholder="" title="Name only accepts letters and blanks"          
                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-            
-                <label for="email" id="email-label"></label>
-                <input type="email" name="email" id="email" placeholder="Email" title="Enter a valid email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-               
-                <label for="Comentario">
-                    <textarea name="Comentario" id="Comentario" cols="25" rows="6" placeholder="Mensaje" required></textarea>
+                <label for="name" id="name-label">Nombre</label>
+
+                
+                <input type="email" name="email" id="email" placeholder="" title="Enter a valid email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <label for="email" id="email-label">Email</label>
+
+        
+                <label for="mensaje" id="mensaje-label">
+                    <textarea name="mensaje" id="mensaje" cols="25" rows="6" placeholder="Mensaje" required></textarea>
                 </label>
                 
                 <button type="submit" id="submit">Enviar</button>

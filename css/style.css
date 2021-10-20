@@ -876,6 +876,7 @@ input:focus{
     outline: none;
 }
 textarea{
+    
     height: 65%;
     width: 270px;
 
@@ -895,6 +896,91 @@ textarea{
 textarea:focus{
     outline: none;
 }
+#name-label{
+  position: absolute;
+  top: 3.5%;
+  left: 14.8%;
+  color: rgb(116, 116, 116);
+  transition: .4s;
+  letter-spacing: .5px;
+}
+#name:focus ~ #name-label{
+  position: absolute;
+  top: -5%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+.focus-label-name ~ #name-label {
+  position: absolute;
+  top: -5%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+
+#email-label{
+  position: absolute;
+  top: 24.3%;
+  left: 14.8%;
+  color: rgb(116, 116, 116);
+  transition: .4s;
+  letter-spacing: .5px;
+}
+#email:focus ~ #email-label{
+  position: absolute;
+  top: 15.3%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+.focus-label-email ~ #email-label{
+  position: absolute;
+  top: 15.3%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+
+/*#mensaje-label {
+  position: absolute;
+  top: 24.3%;
+  left: 14.8%;
+  color: rgb(116, 116, 116);
+  transition: .4s;
+  letter-spacing: .5px;
+}
+
+#mensaje:focus ~ #mensaje-label {
+  position: absolute;
+  top: 15.3%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+
+.focus-label-mensaje ~ #mensaje-label {
+  position: absolute;
+  top: 15.3%;
+  left: 14.8%;
+  color: rgb(33, 150, 243, 1);
+  transition: .4s;
+  font-size: .9em;
+  letter-spacing: .5px;
+}*/
+
+
+
 #submit{
     position: relative;
     bottom: 4%;;
@@ -1025,6 +1111,24 @@ form{
 }
 textarea{
     width: 245px;
+}
+#email-label {
+  position: absolute;
+  top: 23.3%;
+  left: 14.8%;
+}
+#email:focus~#email-label {
+  position: absolute;
+  top: 14.7%;
+  left: 14.8%;
+  
+}
+
+.focus-label-email~#email-label {
+  position: absolute;
+  top: 14.7%;
+  left: 14.8%;
+ 
 }
 button{
     bottom: 6%;
@@ -1481,6 +1585,48 @@ header .nav{
   form input{
     width: 245px;
   }
+  #name-label {
+    position: absolute;
+    top: 3.5%;
+    left: 14.8%;
+   
+  }
+
+  #name:focus ~ #name-label {
+    position: absolute;
+    top: -5%;
+    left: 14.8%;
+    
+  }
+
+  .focus-label-name ~ #name-label {
+    position: absolute;
+    top: -5%;
+    left: 14.8%;
+  
+  }
+
+  #email-label {
+    position: absolute;
+    top: 23.3%;
+    left: 14.8%;
+  
+  }
+
+  #email:focus ~ #email-label {
+    position: absolute;
+    top: 14.8%;
+    left: 14.8%;
+   
+  }
+
+  .focus-label-email ~ #email-label {
+    position: absolute;
+    top: 14.8%;
+    left: 14.8%;
+    
+  }
+ 
  
 }
 /*@media (max-width: 370px) {
@@ -1522,6 +1668,47 @@ header .nav{
     --width-boxys: 125px;
     --height-boxys: 125px;
     --top-contact: 45px;
+  }
+  #name-label {
+    position: absolute;
+    top: 3.5%;
+    left: 8.8%;
+
+  }
+
+  #name:focus~#name-label {
+    position: absolute;
+    top: -5%;
+    left: 8.8%;
+
+  }
+
+  .focus-label-name~#name-label {
+    position: absolute;
+    top: -5%;
+    left: 8.8%;
+
+  }
+
+  #email-label {
+    position: absolute;
+    top: 23.3%;
+    left: 8.8%;
+
+  }
+
+  #email:focus~#email-label {
+    position: absolute;
+    top: 14.8%;
+    left: 8.8%;
+
+  }
+
+  .focus-label-email~#email-label {
+    position: absolute;
+    top: 14.8%;
+    left: 8.8%;
+
   }
 }
 @media (max-width: 354px) {
@@ -1572,15 +1759,13 @@ header .nav{
     
     margin-bottom: 30px;
   }
-  .wave-contact{
-    display: none;
-  }
+  
   body{
     
     height: 3650px;
   }
   #submit{
-    bottom: 6%;
+    bottom: 4%;
   }
  
   /*#box-form *{
@@ -1597,6 +1782,6 @@ header .nav{
     width: 100px;
   }
   .contact-form-response{
-    bottom: 20%;
+    bottom: 19%;
   }
 }
