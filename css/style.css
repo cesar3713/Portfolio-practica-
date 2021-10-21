@@ -12,7 +12,10 @@
 html{
   scroll-behavior: smooth;
 }
-
+::selection{
+  background: #1f91f5c5;
+  color: white;
+}
 :root{
     --height-header: 70px;
     --width-logo: 60px;
@@ -57,15 +60,15 @@ img{
     max-width: 100%;                             /* Para todas las imágenes */
     height: auto;
 }
+
 body{
     /*background-color: #f5f6f7;*/
     background-color: #F4F6FB;
     width: 100%;
     overflow-x: hidden;
 }
-
 body::-webkit-scrollbar{
-  width: 4px;
+  width: 0px;
   backdrop-filter: blur(0.1px);
   background-color: rgba(244,246,251,.01);
 
@@ -74,6 +77,27 @@ body::-webkit-scrollbar-thumb{
   background-color: #358cd8c5;
   border-radius: 10px;
 }
+
+/*.cursor{
+  position: fixed;
+  z-index: 300;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  
+  transition: .1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+ /* backdrop-filter: blur(0.1px);*/
+
+
+/* ~ .cursor{
+  width: 100px;
+  height: 100px;
+  transition: .2s;
+}*/
 
 #Welcome-page{
     display: flex;
@@ -103,6 +127,9 @@ header{
     background-color: rgb(255, 255, 255,.01);
     backdrop-filter: blur(0.1px);
     
+    visibility: visible;
+    top: 0;
+    left: 0;
 }
 header #logo{   
     position: relative;

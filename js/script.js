@@ -4,6 +4,12 @@ import contactFormValidations from "./validaciones-formulario.js";
 
 
 const d = document;
+/*const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e =>{
+	cursor.style.left = e.clientX + "px";
+	cursor.style.top = e.clientY + "px";
+})*/
 
 d.addEventListener("DOMContentLoaded", e => {
     hamburgerMenu(".panel-btn",".nav","ul li a");
