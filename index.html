@@ -294,12 +294,12 @@
                 <input type="hidden" name="_template" value="table">
 
                 
-                <input type="text" name="name" id="name" placeholder="" title="Name only accepts letters and blanks"          
+                <input type="text" name="name" id="name" placeholder="" title="El nombre solo acepta letras y espacios en blanco"          
                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                 <label for="name" id="name-label">Nombre</label>
 
                 
-                <input type="email" name="email" id="email" placeholder="" title="Enter a valid email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input type="email" name="email" id="email" placeholder="" title="Introduzca un correo electrónico válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                 <label for="email" id="email-label">Email</label>
 
         
@@ -319,7 +319,10 @@
                     </path>
                 </svg>
 
-                <div class="contact-form-response none"><p>Tu mensaje fue enviado exitosamente</p></div>
+                <div class="contact-form-response none">
+                    <img src="images/Enviar.png" alt="Enviado" title="Mensaje enviado" class="logo-enviado none">
+                    <p class="p-enviado none">Mensaje enviado con éxito</p>
+                </div>
                     
             </form>
 

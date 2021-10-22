@@ -874,6 +874,11 @@ form input[required]:valid{
   display: none;
 }
 .contact-form-response{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 21%;
   text-align: center;
@@ -881,6 +886,23 @@ form input[required]:valid{
   letter-spacing: .3px;
   text-decoration: underline rgb(33, 150, 243,.7);
   text-underline-position: under;
+}
+p-enviado{
+  position: absolute;
+  bottom: 21%;
+  text-align: center;
+  font-size: .9em;
+  letter-spacing: .3px;
+  text-decoration: underline rgb(33, 150, 243, .7);
+  text-underline-position: under;
+}
+.logo-enviado{
+  position: relative;
+  left: 0;
+  top: 7px;
+  margin-right: 5px;
+  width: 30px;
+  border-radius: 50%;
 }
 form input{
     width: 75%;
@@ -1671,7 +1693,7 @@ header .nav{
   }*/
 @media (max-width: 367px) {
   .contact-form-response{
-    bottom: 18.5%;
+    bottom: 21%;
   }
   #submit{
     height: 40px;
@@ -1809,6 +1831,6 @@ header .nav{
     width: 100px;
   }
   .contact-form-response{
-    bottom: 19%;
+    bottom: 21%;
   }
 }

@@ -9,6 +9,8 @@ export default function contactFormValidations(){
 
         const $loader = d.querySelector(".contact-form-loader"),
         $response = d.querySelector(".contact-form-response"),
+        $enviado = d.querySelector(".logo-enviado"),
+        $textenviar = d.querySelector(".p-enviado"),
         $form = d.querySelector("form");
 
         $loader.classList.remove("none")
@@ -22,7 +24,9 @@ export default function contactFormValidations(){
                 console.log(json);
                 $loader.classList.add("none");
                 $response.classList.remove("none");
-                
+                $enviado.classList.remove("none");
+                $textenviar.classList.remove("none"),
+
                 $form.reset();
             })
             .catch(err=>{
@@ -32,7 +36,8 @@ export default function contactFormValidations(){
             })
             .finally(()=>setTimeout(()=>{
                 $response.classList.add("none");
-               
+                $enviado.classList.add("none");
+                $textenviar.classList.add("none");
             },4500));
 
         /*setTimeout(()=>{
