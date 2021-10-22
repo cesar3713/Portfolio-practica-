@@ -1280,7 +1280,7 @@ header .nav{
     opacity: 0;
     transform: translate(0,-101%);
 
-    transition: opacity .3s linear,transform .3s linear;
+    transition: opacity .4s linear,transform .4s linear;
     
     }
     header .nav ul{
@@ -1330,7 +1330,7 @@ header .nav{
     
     opacity: 1;
     transform: translate(0,0);
-    transition: opacity .3s linear,transform .3s linear;
+    transition: opacity .4s linear,transform .4s linear;
     
     }
     header .nav-is-active ul{
