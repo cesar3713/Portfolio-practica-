@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10px;
 }
 
-.cursor{
+.cursorCirculo{
   position: fixed;
   z-index: 10000;
   width: 5px;
@@ -1051,6 +1051,8 @@ textarea:focus{
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
+  cursor: url(../images/cursorGorrion.png),
+  default;
 }
 
 .parallax > use {

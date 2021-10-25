@@ -14,7 +14,7 @@ function isTouchDevice() {
 const isTouch = isTouchDevice();
 
 if (!isTouch){
-const cursor1 = document.querySelector(".cursor");
+const cursor1 = document.querySelector(".cursorCirculo");
 
 document.addEventListener("mousemove", e =>{
 	cursor1.style.left = e.clientX + "px";
