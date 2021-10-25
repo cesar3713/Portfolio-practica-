@@ -66,6 +66,7 @@ body{
     background-color: #F4F6FB;
     width: 100%;
     overflow-x: hidden;
+    cursor: url(../images/cursorGorrion.png),default;
 }
 body::-webkit-scrollbar{
   width: 0px;
@@ -78,26 +79,19 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10px;
 }
 
-/*.cursor{
+.cursor{
   position: fixed;
-  z-index: 300;
-  width: 40px;
-  height: 40px;
+  z-index: 10000;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  
-  transition: .1s;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  mix-blend-mode: difference;
- /* backdrop-filter: blur(0.1px);*/
-
-
-/* ~ .cursor{
-  width: 100px;
-  height: 100px;
+  background-color: black;
+  border: none;
   transition: .2s;
-}*/
+  transform: translate(-50%,-50%) translateZ(0);
+  pointer-events: none;
+}
+
 
 #Welcome-page{
     display: flex;
@@ -140,7 +134,6 @@ header #logo{
     border-radius: 50% 20% 80% 20%;
     animation: move-icon 2s linear infinite;
     transition: .8s;
-    cursor: pointer;
 }
 @keyframes move-icon{
     0%, 100%{
@@ -351,19 +344,25 @@ header .nav a:hover{
   border: none;
   border-radius: 20px;
   text-decoration: none;
+  letter-spacing: .02em;
   color: rgb(41, 41, 41);
   font-size: 1.2em;
   line-height: 130%;
   text-align: center;
   background-image: linear-gradient(to right, #4facfebb 0%, #00f1fead 100%);
-  transition: .8s;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transition: .5s;
+  /*box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;*/
 }
-#proyect-description a:hover{
-  background-image: linear-gradient(to right, #4facfebb 0%, #00f1fead  100%);
-  transition: .8s;
-  filter: brightness(.9);
+.raise:hover{
+  color: white;
+  background-image: linear-gradient(to right, #4facfec9 0%, #00f1fec5 100%);
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(57, 219, 248, 0.979);
+  transform: translateY(-0.25em);
+  color: white;
 }
+
+  
+
 
 .section-skills{
     position: relative;
@@ -445,8 +444,14 @@ header .nav a:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
+    transition: 1.1s;
 }
+.ti:hover{
+  transition: 1.1s;
+  border-radius: 50%;
+}
+
+
 .title-ti{                               /* nombre de tecnologias*/
     letter-spacing: .07em;
     font-size: 1.1em;
@@ -848,7 +853,8 @@ h3{position: relative;
   /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
   /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
   background-color: white;
-  
+  cursor: url(../images/pluma.png) 13.9 50,
+  text;
 }
 form{
     width: 100%;
@@ -862,6 +868,8 @@ form{
     align-items: center;
     
     padding: 0;
+    cursor: url(../images/pluma.png) 13.9 50,
+    text;
 }
 form input[required]:valid{
   border: 1px solid rgb(33, 150, 243,.7);
@@ -886,6 +894,8 @@ form input[required]:valid{
   letter-spacing: .3px;
   text-decoration: underline rgb(33, 150, 243,.7);
   text-underline-position: under;
+  cursor: url(../images/pluma.png) 13.9 50,
+  text;
 }
 p-enviado{
   position: absolute;
@@ -920,9 +930,15 @@ form input{
     
     letter-spacing: .5px;
     background-color: transparent;
+    cursor: url(../images/pluma.png) 13.9 50,
+    text;
+}
+input:hover{
+  cursor: url(../images/pluma.png) 13.9 50,text;
 }
 input:focus{
-    outline: none;
+  outline: none;
+  cursor: url(../images/pluma.png) 13.9 50,text;
 }
 textarea{
     
@@ -940,10 +956,16 @@ textarea{
     overflow: auto;
     letter-spacing: 1px;
     background-color: transparent;
-    
+    cursor: url(../images/pluma.png) 13.9 50,text;
+}
+textarea:hover{
+  cursor: url(../images/pluma.png) 13.9 50,
+  text;
 }
 textarea:focus{
     outline: none;
+    cursor: url(../images/pluma.png) 13.9 50,
+    text;
 }
 #name-label{
   position: absolute;
@@ -999,37 +1021,6 @@ textarea:focus{
   letter-spacing: .5px;
 }
 
-/*#mensaje-label {
-  position: absolute;
-  top: 24.3%;
-  left: 14.8%;
-  color: rgb(116, 116, 116);
-  transition: .4s;
-  letter-spacing: .5px;
-}
-
-#mensaje:focus ~ #mensaje-label {
-  position: absolute;
-  top: 15.3%;
-  left: 14.8%;
-  color: rgb(33, 150, 243, 1);
-  transition: .4s;
-  font-size: .9em;
-  letter-spacing: .5px;
-}
-
-.focus-label-mensaje ~ #mensaje-label {
-  position: absolute;
-  top: 15.3%;
-  left: 14.8%;
-  color: rgb(33, 150, 243, 1);
-  transition: .4s;
-  font-size: .9em;
-  letter-spacing: .5px;
-}*/
-
-
-
 #submit{
     position: relative;
     bottom: 4%;;
@@ -1046,6 +1037,8 @@ textarea:focus{
 #submit:hover{
     background-color: rgba(33, 149, 243, 0.836);
     color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(27, 155, 240, 0.774);
+    transform: translateY(-0.25em);
 }
 
 .wave-contact {
