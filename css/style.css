@@ -786,7 +786,6 @@ h3{position: relative;
     font-size: 1.25em;
     margin-top: 5%;
     color: rgb(36, 36, 36);
-    
 }
 #Contact_section .box_contact #links{
     position: relative;
@@ -804,18 +803,31 @@ h3{position: relative;
 }
 #Contact_section .box_contact #links .icons{
     position: relative;
-    bottom: var(--iconos-redes-position);
+    bottom: var(--iconos-redes-position);                 
     width: 150px;
+    
+    border-radius: 50%;
+    
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
+    
 }
-#Contact_section .box_contact #links .icons a{
+#Contact_section .box_contact #links .icons #se{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
+
 }
-#Contact_section .box_contact #links .icons a p{
+#Contact_section .box_contact #links .icons #se a{
+  cursor: url(../images/cursorGorrion.png),             /* fghfhfhfhf*/
+  pointer;
+}
+#Contact_section .box_contact #links .icons #se a p{
     position: absolute;
     top: 200px;
+    left: 33.8px;
     margin-top: 15.14px;
     color: rgb(34, 34, 34); 
     text-decoration: none;
@@ -824,9 +836,16 @@ h3{position: relative;
     pointer;
     transition: .2s;
 }
-#Contact_section .box_contact #links .icons a p:hover{
+#Contact_section .box_contact #links .icons #se a #p-git{
+  left: 41.8px;
+}
+#Contact_section .box_contact #links .icons #se a #p-git:hover{
+  left: 38px;
+}
+#Contact_section .box_contact #links .icons #se p:hover{
   font-size: 1.35em;
   transition: .2s;
+  left: 30px;
 }
 
 #Icono-Linkedin img{
