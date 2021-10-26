@@ -22,6 +22,31 @@ document.addEventListener("mousemove", e =>{
 })
 }
 
+let sobremi =document.querySelectorAll(".todosLosEnlaces");
+
+const listaEn =Array.from(sobremi);
+
+const afectado = document.querySelector(".cursorCirculo");
+
+for(let i = 0 ; i<listaEn.length ; i++ ){
+
+	listaEn[i].addEventListener("mouseover", () => {
+
+	afectado.style.width = 55+"px"
+	afectado.style.height = 55+"px"
+
+	
+}, false)
+
+	listaEn[i].addEventListener("mouseout", () => {
+
+	afectado.style.width = 5+"px"
+	afectado.style.height = 5+"px"
+
+}, false)
+}
+
+
 d.addEventListener("DOMContentLoaded", e => {
     hamburgerMenu(".panel-btn",".nav","ul li a");
     contactFormValidations();
@@ -56,6 +81,13 @@ d.addEventListener("DOMContentLoaded", e => {
 
     b();
 
+	/*$('a').hover(function(){
+ 		$('.cursorCirculo').css({
+    		"width": "100px", 
+    		"height": "100px" 
+  		});
+	});*/
+	
 
 })
 

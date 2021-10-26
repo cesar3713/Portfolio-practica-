@@ -17,6 +17,7 @@ html{
   color: white;
 }
 :root{
+    --borderWidth: 3px;
     --height-header: 70px;
     --width-logo: 55px;
 
@@ -85,8 +86,9 @@ body::-webkit-scrollbar-thumb{
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: black;
-  border: none;
+  background-color: rgb(255, 255, 255,.1);
+  backdrop-filter: blur(0.0001px);
+  border: 1px solid #358cd8c5;
   transition: .2s;
   transform: translate(-50%,-50%) translateZ(0);
   pointer-events: none;
@@ -134,6 +136,8 @@ header #logo{
     border-radius: 50% 20% 80% 20%;
     animation: move-icon 2s linear infinite;
     transition: .8s;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 @keyframes move-icon{
     0%, 100%{
@@ -146,6 +150,8 @@ header #logo{
 header #logo:hover{
     transform: rotate(-5deg);
     transition: .8s;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 
 .panel-btn{
@@ -193,9 +199,16 @@ header .nav a{
     color: rgba(0, 0, 0, 0.781);   
     font-size: 0.9em;
     font-family: Montserrat, Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
+    transition: .2s;
 }
 header .nav a:hover{
     color: #000;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
+    transition: .2s;
+    font-size: 1em;
 }
 
 
@@ -352,6 +365,8 @@ header .nav a:hover{
   background-image: linear-gradient(to right, #4facfebb 0%, #00f1fead 100%);
   transition: .5s;
   /*box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;*/
+  cursor: url(../images/cursorGorrion.png),
+  pointer;
 }
 .raise:hover{
   color: white;
@@ -359,6 +374,8 @@ header .nav a:hover{
   box-shadow: 0 0.5em 0.5em -0.4em rgba(57, 219, 248, 0.979);
   transform: translateY(-0.25em);
   color: white;
+  cursor: url(../images/cursorGorrion.png),
+  pointer;
 }
 
   
@@ -766,7 +783,7 @@ h3{position: relative;
 #Contact_section .box_contact p{
     position: relative;
     top: 10%;
-    font-size: 1.3em;
+    font-size: 1.25em;
     margin-top: 5%;
     color: rgb(36, 36, 36);
     
@@ -774,13 +791,16 @@ h3{position: relative;
 #Contact_section .box_contact #links{
     position: relative;
     top: 25%;
-
+  
     display: flex;
     flex-direction: row;                                     /* Caja Enlaces Iconos */
     justify-content: space-between;
     align-items: center;
     
     padding: 10px;
+    cursor: url(../images/cursorGorrion.png),
+    default;
+    
 }
 #Contact_section .box_contact #links .icons{
     position: relative;
@@ -800,18 +820,30 @@ h3{position: relative;
     color: rgb(34, 34, 34); 
     text-decoration: none;
     letter-spacing: .04em;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
+    transition: .2s;
 }
+#Contact_section .box_contact #links .icons a p:hover{
+  font-size: 1.35em;
+  transition: .2s;
+}
+
 #Icono-Linkedin img{
     position: relative;
     width: var(--width-icono-redes);
     border-radius: 50%;
     animation: bounce 1s alternate infinite ease-in;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 #iconoGithub{
     position: relative;
     width: var(--width-icono-redes);
     animation: bounce 1s alternate infinite ease-in;
     animation-delay: 1s;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 .shadow{
   width: var(--width-icono-redes);
@@ -874,9 +906,6 @@ form{
 form input[required]:valid{
   border: 1px solid rgb(33, 150, 243,.7);
 }
-/*form textarea[required]:valid{
-  border: 2px solid rgb(33, 150, 243,.7);
-}*/
 
 .none{
   display: none;
@@ -1033,12 +1062,16 @@ textarea:focus{
     background-color: rgba(33, 149, 243, 0.644);
     cursor: pointer;
     letter-spacing: .04em;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 #submit:hover{
     background-color: rgba(33, 149, 243, 0.836);
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em rgba(27, 155, 240, 0.774);
     transform: translateY(-0.25em);
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
 }
 
 .wave-contact {
