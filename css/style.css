@@ -1550,7 +1550,11 @@ header .nav{
     position: static;
   }
   }
-
+@media (max-width: 768px) {
+  .cursorCirculo{
+    display: none;
+  }
+}
 @media (max-width: 660px) {
   :root{
     --height-header: 55px;
