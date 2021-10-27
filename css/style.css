@@ -479,9 +479,9 @@ header .nav a:hover{
     text-align: center;
     z-index: 2;
 }
-.percentage{                            /* porcentages: 60% = margin-top: -140%; */
-    z-index: 2;                                     /*  65% = margin-top: -135%; */
-    font-size: 1.05em;                                 /*  70% = margin-top: -130%; */
+.percentage{                            /* porcentages: 60% = margin-top: -135%; */
+    z-index: 2;                                     /*  65% = margin-top: -130%; */
+    font-size: 1.05em;                                 /*  70% = margin-top: -125%; */
     text-align: center;                             /*  75% = margin-top: -120%; */
 }
 @keyframes moveSkill{
@@ -509,7 +509,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -130%;
+  margin-top: -125%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -568,7 +568,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -135%;
+  margin-top: -130%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -597,7 +597,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -140%;
+  margin-top: -135%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -626,7 +626,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -135%;
+  margin-top: -130%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -655,7 +655,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -140%;
+  margin-top: -135%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -684,7 +684,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -135%;
+  margin-top: -130%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
@@ -713,7 +713,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -135%;
+  margin-top: -130%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
