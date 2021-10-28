@@ -26,7 +26,7 @@ let sobremi =document.querySelectorAll(".todosLosEnlaces");
 
 const listaEn =Array.from(sobremi);
 
-const afectado = document.querySelector(".cursorCirculo");
+let afectado = document.querySelector(".cursorCirculo");
 
 for(let i = 0 ; i<listaEn.length ; i++ ){
 
@@ -34,6 +34,11 @@ for(let i = 0 ; i<listaEn.length ; i++ ){
 
 	afectado.style.width = 55+"px"
 	afectado.style.height = 55+"px"
+	afectado.style.backgroundColor = "rgb(255, 255, 255,.1)"
+	afectado.style.borderTop = "1px solid black"
+	afectado.style.borderBottom = "1px solid #358cd8c5"
+	afectado.style.borderLeft = "1px solid white"
+	afectado.style.borderRight = "1px solid white"
 
 	
 }, false)
@@ -42,6 +47,8 @@ for(let i = 0 ; i<listaEn.length ; i++ ){
 
 	afectado.style.width = 5+"px"
 	afectado.style.height = 5+"px"
+	afectado.style.backgroundColor = "black"
+	afectado.style.border = "none"
 
 }, false)
 }

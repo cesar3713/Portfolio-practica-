@@ -86,13 +86,9 @@ body::-webkit-scrollbar-thumb{
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255,.1);
   backdrop-filter: blur(0.0001px);
-  /*border: 1px solid rgba(0, 0, 0, 0.74);*/
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgb(0, 162, 255);
-  border-left: 1px solid #00ffffc5;
-  border-right: 1px solid #00ffffc5;
+  background-color: black;
+  border: none;
   transition: .2s;
   transform: translate(-50%,-50%) translateZ(0);
   pointer-events: none;
