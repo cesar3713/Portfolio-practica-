@@ -83,8 +83,8 @@ body::-webkit-scrollbar-thumb{
 .cursorCirculo{
   position: fixed;
   z-index: 10000;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   backdrop-filter: blur(0.0001px);
   background-color: black;

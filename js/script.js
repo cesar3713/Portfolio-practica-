@@ -45,8 +45,8 @@ for(let i = 0 ; i<listaEn.length ; i++ ){
 
 	listaEn[i].addEventListener("mouseout", () => {
 
-	afectado.style.width = 5+"px"
-	afectado.style.height = 5+"px"
+	afectado.style.width = 4+"px"
+	afectado.style.height = 4+"px"
 	afectado.style.backgroundColor = "black"
 	afectado.style.border = "none"
 
