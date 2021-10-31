@@ -73,7 +73,6 @@ body::-webkit-scrollbar{
   width: 0px;
   backdrop-filter: blur(0.1px);
   background-color: rgba(244,246,251,.01);
-
 }
 body::-webkit-scrollbar-thumb{
   background-color: #358cd8c5;
@@ -93,7 +92,9 @@ body::-webkit-scrollbar-thumb{
   transform: translate(-50%,-50%) translateZ(0);
   pointer-events: none;
 }
-
+.oculto{
+  opacity: 0;
+}
 
 #Welcome-page{
     display: flex;

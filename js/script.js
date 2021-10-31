@@ -15,11 +15,21 @@ const isTouch = isTouchDevice();
 
 if (!isTouch){
 const cursor1 = document.querySelector(".cursorCirculo");
-
+const cursorSeOculta = document.querySelector(".oculto");
 document.addEventListener("mousemove", e =>{
 	cursor1.style.left = e.clientX + "px";
 	cursor1.style.top = e.clientY + "px";
 })
+
+const mouseDentro = () => {
+	cursor1.classList.remove("oculto");
+}
+const mouseFuera = () => {
+	cursor1.classList.add("oculto");
+}
+
+document.addEventListener("mouseenter",mouseDentro);
+document.addEventListener("mouseleave",mouseFuera);
 }
 
 let sobremi =document.querySelectorAll(".todosLosEnlaces");
