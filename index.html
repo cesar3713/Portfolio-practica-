@@ -25,20 +25,27 @@
     
     <script type="module" src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="js/script.js"></script>
-    
+    <script type="module" src="js/audio.js"></script>
 
 </head>
 
 <body>
-
+    
+    <!--------Div de Cursor (Punto negro y esfera de diferentes bordes)-------->
     <div class="cursorCirculo"></div>
 
-
-    <section id="Welcome-page">                                       <!-- Sección Bienvenida -->
+    <!--------Sección de Bienvenida ------->
+    <section id="Welcome-page">                                     
+    
     
         <header>
  
-            <a href="#Welcome-page"><img src="images/EnviteIgneo.jpg" alt="logo-Cesar" id="logo" class="todosLosEnlaces"></a>      <!--  Logo  -->
+            <a href="#Welcome-page" id="a-logo"><img src="images/EnviteIgneo.jpg" alt="logo-Cesar" id="logo" class="todosLosEnlaces"></a>      <!--  Logo  -->
+
+            <audio id="audio" src="audio/Egyptian Pools.mp3" type="audio/mp3" loop></audio>
+
+            <img src="images/icono-audio.png" alt="Musica" class="todosLosEnlaces img-audio" id="playPauseBTN">
+
 
             <nav class="nav">             
                                                                             <!-- Nav -->
@@ -51,7 +58,7 @@
             </nav>
 
             <button class="panel-btn hamburger hamburger--spring" type="button">
-                <span class="hamburger-box">
+                <span class="hamburger-box" style="width: 27px;">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
@@ -265,9 +272,9 @@
             <p>¿Cómo toma su café?</p>                     <!--  Caja Links Enlaces-->
 
             <div id="links">
-                <div class="icons">
+                <div class="icons">                    <!--  id="se"  ???¿¿¿  ajajajaj xD  -->
                     <div id="se">
-                        <a href="https://github.com/cesar3713" target="_blank" class="todosLosEnlaces"><img src="images/git.png" alt="github Cesar Beas Suarez" id="iconoGithub"  ></a>
+                        <a href="https://github.com/cesar3713" target="_blank" class="todosLosEnlaces a-img-redes"><img src="images/git.png" alt="github Cesar Beas Suarez" id="iconoGithub"></a>
                         <div class="shadow" id="shadow_git"></div>
                         <a href="https://github.com/cesar3713" target="_blank" class="todosLosEnlaces"><p id="p-git">Github</p></a>
                     </div>
@@ -276,7 +283,7 @@
 
                 <div class="icons" id="Icono-Linkedin">
                     <div id="se">
-                        <a href="https://www.linkedin.com/in/julio-cesar-beas-suarez-a74aa2216/" target="_blank" class="todosLosEnlaces"><img src="images/Linkedin.jpg" alt="Linkedin Cesar Beas Suarez" ></a>
+                        <a href="https://www.linkedin.com/in/julio-cesar-beas-suarez-a74aa2216/" target="_blank" class="todosLosEnlaces a-img-redes"><img src="images/Linkedin.jpg" alt="Linkedin Cesar Beas Suarez" ></a>
                         <div class="shadow"></div>
                         <a href="https://www.linkedin.com/in/julio-cesar-beas-suarez-a74aa2216/" target="_blank" class="todosLosEnlaces"><p>Linkedin</p></a>
                     </div>

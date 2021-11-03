@@ -98,14 +98,6 @@ d.addEventListener("DOMContentLoaded", e => {
 
     b();
 
-	/*$('a').hover(function(){
- 		$('.cursorCirculo').css({
-    		"width": "100px", 
-    		"height": "100px" 
-  		});
-	});*/
-	
-
 })
 
 

@@ -128,10 +128,16 @@ header{
     top: 0;
     left: 0;
 }
+header #a-logo{
+  border:none;
+  position: relative;
+  left: 10vw;
+  z-index: -10;
+  border-radius: 50% 20% 80% 20%;
+}
 header #logo{   
-    position: relative;
-    left: 10vw;                                          /* Caja Logo Img*/
-    background-color: rgb(85, 222, 247);
+    position: relative;                                     
+    background-color: rgb(85, 222, 247);           /* Caja Logo Img*/
     width: var(--width-logo);
     box-shadow: rgba(46, 195, 240, 0.4) -2.5px 2.5px, rgba(100, 210, 253, 0.3) -5px 5px, rgba(96, 212, 241, 0.2) -7.5px 7.5px, rgba(94, 216, 247, 0.1) -10px 10px, rgba(75, 225, 245, 0.05) -12.5px 12.5px;
     border-radius: 50% 20% 80% 20%;
@@ -149,10 +155,30 @@ header #logo{
     }
 }
 header #logo:hover{
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     transition: .8s;
     cursor: url(../images/cursorGorrion.png),
     pointer;
+}
+
+.img-audio{
+  position: absolute;
+  right: 4vw;
+  width: 30px;
+  border: 1px solid red;
+  border: none;
+  border-radius: 50%;
+  z-index: 105;
+  cursor: url(../images/cursorGorrion.png),
+  pointer;
+  transition: .2s;
+  background-color: transparent;
+}
+.img-audio:hover{
+  cursor: url(../images/cursorGorrion.png),
+  pointer;
+  width: 35px;
+  transition: .2s;
 }
 
 .panel-btn{
@@ -179,7 +205,7 @@ header .nav{
     height: 70px;                                         /* Caja Nav */
     padding-left: 1vw; 
     padding-right: 1vw;   
-      
+         
 }
 header .nav ul{
     
@@ -816,6 +842,9 @@ h3{position: relative;
     pointer;
     
 }
+.a-img-redes{
+  height: 0px;
+}
 #Contact_section .box_contact #links .icons #se{
     display: flex;
     flex-direction: column;
@@ -1092,7 +1121,6 @@ textarea:focus{
     transition: .5s;
     font-size: 1.2em;
     background-color: rgba(33, 149, 243, 0.644);
-    cursor: pointer;
     letter-spacing: .04em;
     cursor: url(../images/cursorGorrion.png),
     pointer;
@@ -1310,11 +1338,19 @@ header .nav{
 @media (max-width: 1075px) {
   .panel-btn{
     position: absolute;
-    right: 10px;
+    right: 40px;
    
-    top: 3px;
+    top: 18px;
+    padding: 0px;
+    width: 0px;
+    height: 2px;
+    align-items: center;
   }
-  
+  .hamburger-box{
+    right: 14.3px;
+    width: 28px;
+    top: -12px;
+  }
   
     header .nav{
         position: absolute;
@@ -1416,8 +1452,11 @@ header .nav{
     color: rgba(0, 0, 0, 0.781); 
     
     }
-    
+    .img-audio {
+      position: absolute;
+      right: 100px;
     }
+  }
     
     
     
@@ -1561,9 +1600,24 @@ header .nav{
     --height-header: 55px;
     --width-logo: 40px;
   }
-  .panel-btn{
-    top: 1px;
-    right: -5px;
+  .img-audio {
+    position: absolute;
+    right: 70px;
+  }
+  .panel-btn {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    padding: 0px;
+    width: 0px;
+    height: 2px;
+    align-items: center;
+  }
+
+  .hamburger-box {
+    right: 14.3px;
+    width: 28px;
+    top: -12px;
   }
 }
 @media (max-width: 550px) {
