@@ -1350,6 +1350,8 @@ header .nav{
     right: 14.3px;
     width: 28px;
     top: -12px;
+    cursor: url(../images/cursorGorrion.png),
+    pointer;
   }
   
     header .nav{
