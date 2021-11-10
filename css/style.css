@@ -222,13 +222,14 @@ header .nav ul li{
 header .nav a{
     text-decoration: none;
     letter-spacing: .03em;
-    padding: var(--padding-nav-a) .5vw;                            /* Enlaces del Nav */
+    padding: var(--padding-nav-a);                            /* Enlaces del Nav */
     color: rgba(0, 0, 0, 0.781);   
     font-size: 0.9em;
     font-family: Montserrat, Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: url(../images/cursorGorrion.png),
     pointer;
     transition: .2s;
+    border: none;
 }
 header .nav a:hover{
     color: #000;
@@ -1232,7 +1233,7 @@ header .nav{
     width: 350px;
 }
 header .nav a{
-    padding: var(--padding-nav-a) 14px;     
+    padding: var(--padding-nav-a);     
 }
 h3{
     top: 8%;
