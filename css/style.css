@@ -15,10 +15,6 @@ html{
 .load-hidden{
   visibility: hidden;
 }
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 ::selection{
   background: #1f91f5c5;
   color: white;
