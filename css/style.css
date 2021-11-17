@@ -1030,7 +1030,8 @@ textarea{
     
     height: 65%;
     width: 270px;
-
+    min-width: 270px;
+    max-width: 370px;
     padding: 10px;
     resize: horizontal;
     font-size: 1em;
@@ -1040,7 +1041,8 @@ textarea{
     
     border: 1px solid rgb(33, 150, 243,.7);
     overflow: auto;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.6px;
+    line-height: 1.1;
     background-color: transparent;
     cursor: url(../images/pluma.png) 13.9 50,text;
 }
@@ -1436,11 +1438,14 @@ form input {
 }
 textarea {
   width: 35.66710700132101vh;
+  min-width: 35.66710700132101vh;
+  max-width: 48.87714663143989vh;
   padding: 1.321003963011889vh;
   font-size: 2.1136063408190227vh;
   border-radius: 1.321003963011889vh;
   border: 0.13210039630118892vh solid rgb(33, 150, 243, .7);
-  letter-spacing: 0.15852047556142668vh;
+  letter-spacing: 0.21136063408190225vh;
+  line-height: 1.1;
 }
 textarea::-webkit-scrollbar {
   width: 0.9247027741083224vh;
@@ -1575,6 +1580,8 @@ form{
 }
 textarea{
     width: 245px;
+    min-width: 245px;
+    max-width: 340px;
 }
 #email-label {
   position: absolute;
@@ -2122,6 +2129,9 @@ header .nav{
     left: 14.8%;
     
   }
+  textarea{
+    max-width: 85vw;
+  }
  
  
 }
@@ -2272,6 +2282,8 @@ header .nav{
     /*left: -10px;
     right: 10px;*/
     width: 240px;
+    min-width: 240px;
+    max-width: 270px;
   }
   #submit{
     height: 40px;
