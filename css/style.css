@@ -1032,7 +1032,7 @@ textarea{
     width: 270px;
 
     padding: 10px;
-    resize: none;
+    resize: horizontal;
     font-size: 1em;
     
     margin-bottom: 5%;
@@ -1040,9 +1040,20 @@ textarea{
     
     border: 1px solid rgb(33, 150, 243,.7);
     overflow: auto;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     background-color: transparent;
     cursor: url(../images/pluma.png) 13.9 50,text;
+}
+
+textarea::-webkit-scrollbar {
+  width: 7px;
+  backdrop-filter: blur(0.1px);
+  background-color: rgba(244, 246, 251, .01);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #358cd8c5;
+  border-radius: 10px;
 }
 textarea:hover{
   cursor: url(../images/pluma.png) 13.9 50,
@@ -1429,7 +1440,13 @@ textarea {
   font-size: 2.1136063408190227vh;
   border-radius: 1.321003963011889vh;
   border: 0.13210039630118892vh solid rgb(33, 150, 243, .7);
-  letter-spacing: 0.13210039630118892vh;
+  letter-spacing: 0.15852047556142668vh;
+}
+textarea::-webkit-scrollbar {
+  width: 0.9247027741083224vh;
+}
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 1.321003963011889vh;
 }
 
 #name-label {
