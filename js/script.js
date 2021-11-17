@@ -42,21 +42,21 @@ for(let i = 0 ; i<listaEn.length ; i++ ){
 
 	listaEn[i].addEventListener("mouseover", () => {
 
-	afectado.style.width = 55+"px"
-	afectado.style.height = 55+"px"
+	afectado.style.width = 7.265521796565389+"vh"
+	afectado.style.height = 7.265521796565389+"vh"
 	afectado.style.backgroundColor = "rgb(255, 255, 255,.1)"
-	afectado.style.borderTop = "1px solid black"
-	afectado.style.borderBottom = "1px solid #358cd8c5"
-	afectado.style.borderLeft = "1px solid white"
-	afectado.style.borderRight = "1px solid white"
+	afectado.style.borderTop = "0.13210039630118892vh solid black"
+	afectado.style.borderBottom = "0.13210039630118892vh solid #358cd8c5"
+	afectado.style.borderLeft = "0.13210039630118892vh solid white"
+	afectado.style.borderRight = "0.13210039630118892vh solid white"
 
 	
 }, false)
 
 	listaEn[i].addEventListener("mouseout", () => {
 
-	afectado.style.width = 4+"px"
-	afectado.style.height = 4+"px"
+	afectado.style.width = 0.5284015852047557+"vh"
+	afectado.style.height = 0.5284015852047557+"vh"
 	afectado.style.backgroundColor = "black"
 	afectado.style.border = "none"
 
