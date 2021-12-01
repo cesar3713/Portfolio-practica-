@@ -1720,7 +1720,7 @@ header .nav{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        gap: 50px;
+        gap: 75px;
         padding: 0px;
     }
     header .nav a{
@@ -1770,7 +1770,7 @@ header .nav{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        gap: 70px;
+        gap: 75px;
         padding: 0px;
     }
     header .nav-is-active ul li{
