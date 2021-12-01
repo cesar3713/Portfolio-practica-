@@ -226,7 +226,7 @@ header .nav a{
     letter-spacing: .03em;
     padding: var(--padding-nav-a);                            /* Enlaces del Nav */
     color: rgba(0, 0, 0, 0.781);   
-    font-size: 1em;
+    font-size: .95em;
     font-family: Montserrat, Quicksand, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: url(../images/cursorGorrion.png),
     pointer;
@@ -238,7 +238,7 @@ header .nav a:hover{
     cursor: url(../images/cursorGorrion.png),
     pointer;
     transition: .2s;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 
@@ -1263,10 +1263,10 @@ header .nav ul {
 }
 header .nav a {
   letter-spacing: 0.06340819022457067vh;
-  font-size: 2.1136063408190227vh;
+  font-size: 2.0079260237780714vh;
 }
 header .nav a:hover {
-  font-size: 2.324966974900925vh;
+  font-size: 2.2192866578599735vh;
 }
 
 #Welcome-page #Photo_and_data {
@@ -1731,7 +1731,7 @@ header .nav{
     padding: 10px 30px;
     border-radius: 40px;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.95em;
     color: rgba(0, 0, 0, 0.781); 
     
     }
@@ -1784,7 +1784,7 @@ header .nav{
     padding: 10px 30px;
     border-radius: 40px;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.95em;
     color: rgba(0, 0, 0, 0.781); 
     
     }
