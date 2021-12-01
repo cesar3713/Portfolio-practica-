@@ -116,17 +116,17 @@ header{
     position: fixed;
     width: 100%;
     height: var(--height-header);
-    border: 1px solid rgb(255, 255, 255,.1);             /* Caja Header */
+   /* border: 1px solid rgb(255, 255, 255,.1);  */           /* Caja Header */
     display: flex;
     flex-direction: row;
     
     align-items: center;
    
     border-radius: 0% 0% 25% 25%;
-    box-shadow: rgba(104, 104, 104, 0.2) 0px 4px 7px;
+    /*box-shadow: rgba(104, 104, 104, 0.2) 0px 4px 7px;
     background-color: rgb(255, 255, 255,.01);
-    backdrop-filter: blur(0.1px);
-    
+    backdrop-filter: blur(0.1px);*/
+
     visibility: visible;
     top: 0;
     left: 0;
@@ -1236,8 +1236,8 @@ textarea:focus{
 
 }
 header {
-  border: 0.13210039630118892vh solid rgb(255, 255, 255, .1);
-  box-shadow: rgba(104, 104, 104, 0.2) 0px 0.5284015852047557vh 0.9247027741083224vh;
+  border: none;
+  box-shadow: none;
 }
 header #logo {
   box-shadow: rgba(46, 195, 240, 0.4) -0.33025099075297226vh 0.33025099075297226vh,
