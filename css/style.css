@@ -1683,7 +1683,7 @@ header .nav{
   .hamburger-box{
     right: 14.3px;
     width: 28px;
-    top: -12px;
+    top: -11px;
     cursor: url(../images/cursorGorrion.png),
     pointer;
   }
@@ -1953,7 +1953,7 @@ header .nav{
   .hamburger-box {
     right: 14.3px;
     width: 28px;
-    top: -12px;
+    top: -11px;
   }
 }
 @media (max-width: 550px) {
