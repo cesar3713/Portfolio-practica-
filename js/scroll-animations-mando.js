@@ -1,7 +1,7 @@
 window.sr = ScrollReveal();
 
 const opac = 0; 
-const time = 3000;
+const time = 2000;
 const dist = "70px";
 
     sr.reveal("#Photo_and_data",{
