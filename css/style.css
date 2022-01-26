@@ -614,11 +614,11 @@ header .nav a:hover{
 
 /* ANGULAR MINI BOX */
 
-#angular{
+#tester{
     bottom: -12.5%;
     left: 37.5%;
 }
-.wave-angular{
+.wave-tester{
   opacity: .6;
   position: absolute;
   top: 3%;
@@ -627,15 +627,15 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -135%;
+  margin-top: -130%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
 }
-.wave-angular.-three {
+.wave-tester.-three {
   animation: drift 5000ms infinite linear;
 }
-.wave-angular.-two {
+.wave-tester.-two {
   animation: drift 7000ms infinite linear;
   opacity: .4;
   background: rgba(240, 88, 50, 0.795);
@@ -743,7 +743,7 @@ header .nav a:hover{
   width: 200%;                           
   height: 200%;
   margin-left: -50%;
-  margin-top: -130%;
+  margin-top: -125%;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 3000ms infinite linear;
