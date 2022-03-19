@@ -22,7 +22,7 @@ html{
 :root{
     --borderWidth: 3px;
     --height-header: 70px;
-    --width-logo: 55px;
+    --width-logo: 48px;
 
     --padding-nav-a: 1px;
 
@@ -1197,7 +1197,7 @@ textarea:focus{
 :root {
   --borderWidth: 3px;
   --height-header: 9.247027741083222vh;
-  --width-logo: 7.265521796565389vh;
+  --width-logo: 6.665521796565389vh;
 
   --padding-nav-a: 0.13210039630118892vh;
 
@@ -1512,7 +1512,7 @@ textarea::-webkit-scrollbar-thumb {
 @media (max-width: 1452px){
     :root{
     --height-header: 65px;
-    --width-logo: 60px;
+    --width-logo: 43px;
 
     --padding-nav-a: 1px;
 
@@ -1817,7 +1817,7 @@ header .nav{
     
     :root{
     --height-header: 65px;
-    --width-logo: 50px;
+    --width-logo: 40px;
 
     --padding-nav-a: 1px;
 
@@ -1959,7 +1959,7 @@ header .nav{
 @media (max-width: 550px) {
   :root{
   --height-header: 55px;
-    --width-logo: 40px;
+    --width-logo: 38px;
 
     --padding-nav-a: 1px;
 
@@ -2028,7 +2028,7 @@ header .nav{
 @media (max-width: 405px) {
   :root{
   --height-header: 55px;
-    --width-logo: 40px;
+    --width-logo: 36px;
 
     --padding-nav-a: 1px;
 
